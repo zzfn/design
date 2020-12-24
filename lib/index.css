@@ -1,0 +1,65 @@
+.dark .tls-btn {
+  color: #c9d1d9;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #30363d;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  background: #21262d;
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  padding: 5px 16px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer; }
+  .dark .tls-btn:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+    transition-duration: .1s; }
+  .dark .tls-btn:active {
+    background-color: #161b22;
+    box-shadow: 0 0 transparent; }
+
+.light .tls-btn {
+  color: #c9d1d9;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #30363d;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  background: #21262d;
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  padding: 5px 16px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer; }
+  .light .tls-btn:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+    transition-duration: .1s; }
+  .light .tls-btn:active {
+    background-color: #161b22;
+    box-shadow: 0 0 transparent; }
+
+.tls-ipt {
+  color: #c9d1d9;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #30363d;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  background: #21262d;
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  padding: 5px 16px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer; }
+  .tls-ipt:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+    transition-duration: .1s; }
+  .tls-ipt:active {
+    background-color: #161b22;
+    box-shadow: 0 0 transparent; }
