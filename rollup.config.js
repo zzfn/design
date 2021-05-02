@@ -29,6 +29,8 @@ export default {
         ),
         commonjs(),
         typescript(),
-        scss()
+        scss({
+            prefix: `@import "../../styles/light-theme";`,
+        })
     ],
 }

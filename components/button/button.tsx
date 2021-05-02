@@ -1,7 +1,7 @@
 import React from 'react';
 const Button: React.FC = ({children}) => {
     return (
-        <button className={'tls-btn'}>{children}</button>
+        <button className={'zzf-btn'}>{children}</button>
     );
 }
 
