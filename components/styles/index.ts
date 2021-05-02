@@ -1,1 +1,2 @@
-import '../button/style/button.scss'
+import '../button/style'
+import '../tag/style'
