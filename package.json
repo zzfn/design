@@ -2,7 +2,8 @@
   "name": "@zzf/design",
   "version": "1.0.0",
   "description": "github风格组件库",
-  "main": "lib/index.min.js",
+  "main": "lib/index.min.cjs.js",
+  "module": "lib/index.min.esm.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib/**/*"

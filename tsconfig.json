@@ -27,11 +27,13 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "components",
-    "typings"
+    "components/**/*",
+    "typings/**/*"
   ],
   "exclude": [
     "test",
-    "node_modules"
+    "node_modules",
+    "components/styles/*",
+    "components/**/style/*"
   ]
 }
