@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zzfn/tilas.git"
+    "url": "git+https://github.com/zzfn/design.git"
   },
   "keywords": [
     "github",
@@ -23,9 +23,9 @@
   "author": "zzfn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zzfn/tilas/issues"
+    "url": "https://github.com/zzfn/design/issues"
   },
-  "homepage": "https://github.com/zzfn/tilas#readme",
+  "homepage": "https://github.com/zzfn/design#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-runtime": "^7.12.10",
