@@ -30,16 +30,19 @@ export default {
     external: ['react', 'react-dom'],
     // 插件
     plugins: [
-        babel({
-            babelHelpers: 'runtime',
-            extensions
-        }),
+
         resolve(
             {
                 extensions,
             }
         ),
-        commonjs(),
+        commonjs({
+            include: "node_modules/**"
+        }),
+        babel({
+            babelHelpers: 'runtime',
+            extensions
+        }),
         typescript(),
         scss({
             output: 'lib/bundle.css',
