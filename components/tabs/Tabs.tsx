@@ -13,14 +13,10 @@ interface TabsProps {
 }
 
 const Tabs: React.FC<TabsProps> = ({options,onChange,value}) => {
-    const [val,setVal]=useState(value)
-    useEffect(()=>{
-        onChange(val)
-    },[val])
     return (
         <ul className={'zzf-tab'}>
             {
-                options.map(node => <TabPane activeKey={value} onChange={(value)=>setVal(value)} key={node.value} label={node.label} value={node.value}/>)
+                options.map(node => <TabPane activeKey={value} onChange={(val)=> onChange(val)} key={node.value} label={node.label} value={node.value}/>)
             }
         </ul>
     );
