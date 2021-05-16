@@ -24,24 +24,22 @@ export default {
             file: `lib/index${env === 'production' ? '.min' : ''}.umd.js`,
             format: 'umd',
             name: 'design',
+            globals:{
+                'react': 'React',
+                'react-dom': 'ReactDOM',
+            },
         }
     ],
     // 将模块视为外部模块，不会打包在库中
     external: ['react', 'react-dom'],
     // 插件
     plugins: [
-
-        resolve(
-            {
-                extensions,
-            }
-        ),
-        commonjs({
-            include: "node_modules/**"
-        }),
+        resolve(),
+        commonjs(),
         babel({
             babelHelpers: 'runtime',
-            extensions
+            extensions,
+            exclude:'node_modules/**'
         }),
         typescript(),
         scss({
