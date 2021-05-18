@@ -3,6 +3,7 @@ import Content from "./Content";
 import Sidebar from './Sidebar'
 import Header from "./Header";
 import Main from './Main'
+import Basic from './Basic'
 import React from "react";
 
 interface InterfaceLayout {
@@ -24,14 +25,16 @@ interface LayoutType extends React.FC {
     Header: typeof Header;
     Footer: typeof Footer;
     Content: typeof Content;
+    Main: typeof Main;
     Sidebar: typeof Sidebar;
 }
 
-const Layout = Main as LayoutType;
+const Layout = Basic as LayoutType;
 
 Layout.Header = Header;
 Layout.Footer = Footer;
 Layout.Content = Content;
 Layout.Sidebar = Sidebar;
+Layout.Main = Main;
 
 export {Layout}

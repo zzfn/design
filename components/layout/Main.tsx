@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main: React.FC = ({children}) => {
     return (
-        <main className={'zzf-box-responsive-main'}>{children}</main>
+        <main className={'zzf-layout-main zzf-box-responsive-main'}>{children}</main>
     );
 }
 
