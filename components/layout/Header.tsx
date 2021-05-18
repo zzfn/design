@@ -1,8 +1,10 @@
 import React from 'react';
-
-const Header:React.FC=({children})=> {
+type layoutHeaderProps ={
+    className?:string
+}
+const Header:React.FC<layoutHeaderProps>=({children,className})=> {
     return (
-        <header>{children}</header>
+        <header className={`zzf-layout-header ${className}`}>{children}</header>
     );
 }
 

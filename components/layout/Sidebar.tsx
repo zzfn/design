@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar: React.FC = ({children}) => {
     return (
-        <aside>
+        <aside className={'zzf-box-responsive-slider'}>
             {children}
         </aside>
     );

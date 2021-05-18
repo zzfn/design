@@ -1,8 +1,10 @@
 import React from 'react';
-
-const Layout:React.FC=({children})=> {
+interface layoutProps {
+    className?:string
+}
+const Layout:React.FC<layoutProps>=({children,className})=> {
     return (
-        <section>{children}</section>
+        <section className={`zzf-layout zzf-box-responsive ${className}`}>{children}</section>
     );
 }
 
