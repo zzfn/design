@@ -18,8 +18,13 @@
         "components/*"
       ]
     },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ],
     "types": [
-      "node"
+      "node",
+      "classNameProps"
     ],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,

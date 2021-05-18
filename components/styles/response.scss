@@ -11,6 +11,14 @@
     width: 100%;
   }
   @media (min-width: 960px) {
+    width: 960px;
+  }
+}
+.zzf-box-responsive-content{
+  @media (min-width: 768px) and (max-width: 958.98px) {
+    width: 100%;
+  }
+  @media (min-width: 960px) {
     width: 700px;
   }
 }

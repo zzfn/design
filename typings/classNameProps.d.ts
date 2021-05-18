@@ -1,0 +1,3 @@
+interface classNameProps {
+    className?:string
+}
