@@ -4,17 +4,24 @@
 
 .zzf-layout-main {
   margin: auto;
-  padding: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .zzf-layout-content {
-  padding: 16px;
+  //padding: 16px;
 }
-
+.zzf-layout-slider{
+  position: sticky;
+  height: 100%;
+  top: 20px;
+}
 .zzf-layout-header {
   padding: 16px;
 }
 
 .zzf-layout-footer {
   background-color: #233e8b;
+  display: flex;
+  justify-content: center;
 }
