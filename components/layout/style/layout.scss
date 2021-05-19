@@ -16,7 +16,14 @@
   top: 20px;
 }
 .zzf-layout-header {
-  padding: 16px;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-logo);
+  .zzf-layout-header-content{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .zzf-layout-footer {

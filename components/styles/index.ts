@@ -3,6 +3,8 @@ import '../tag/style'
 import '../tabs/style'
 import '../layout/style'
 import '../progress/style'
+import '../loading/style'
+import '../back-top/style'
 import './theme.scss'
 import './response.scss'
 
