@@ -1,4 +1,4 @@
-.zzf-box-responsive{
+.zzf-box-responsive {
   //@media (max-width: 958.98px) {
   //  width: 100%;
   //}
@@ -6,23 +6,27 @@
   //  max-width: 960px;
   //}
 }
-.zzf-box-responsive-main{
-  @media (min-width: 768px) and (max-width: 958.98px) {
+
+.zzf-box-responsive-main {
+  @media (max-width: 958.98px) {
+    padding: 0 16px;
     width: 100%;
   }
   @media (min-width: 960px) {
     width: 960px;
   }
 }
-.zzf-box-responsive-content{
-  @media (min-width: 768px) and (max-width: 958.98px) {
+
+.zzf-box-responsive-content {
+  @media (max-width: 958.98px) {
     width: 100%;
   }
   @media (min-width: 960px) {
     width: 700px;
   }
 }
-.zzf-box-responsive-slider{
+
+.zzf-box-responsive-slider {
   @media (max-width: 958.98px) {
     display: none;
   }

@@ -23,7 +23,7 @@ const BackTop: React.FC = ({children}) => {
                 isShow && <div onClick={() => {
                     scrollTo({top: 0})
                 }} className={'zzf-back-top'}>
-                    回到顶部
+                    {children}
                 </div>
             }
         </>
