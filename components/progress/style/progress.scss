@@ -1,0 +1,28 @@
+$progress-color: #867ae9;
+.zzf-progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: $progress-color;
+
+  &::-webkit-progress-bar {
+    background-color: transparent;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $progress-color;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $progress-color;
+
+  }
+}

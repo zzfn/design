@@ -3,7 +3,7 @@ import Content from "./Content";
 import Sidebar from './Sidebar'
 import Header from "./Header";
 import Main from './Main'
-import Basic from './Basic'
+import Basic, {BasicProps} from './Basic'
 import React from "react";
 
 interface InterfaceLayout {
@@ -21,7 +21,7 @@ interface InterfaceLayout {
 //     Footer
 // }
 
-interface LayoutType extends React.FC {
+interface LayoutType extends React.FC<BasicProps> {
     Header: typeof Header;
     Footer: typeof Footer;
     Content: typeof Content;

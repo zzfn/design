@@ -3,9 +3,8 @@
 }
 
 .zzf-layout-main {
+  flex: 1;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 .zzf-layout-content {
@@ -24,4 +23,12 @@
   background-color: #233e8b;
   display: flex;
   justify-content: center;
+}
+.zzf-layout-row{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.zzf-layout-column{
+  display: flex;
+  flex-flow: column nowrap;
 }
