@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const Progress: React.FC = ({children}) => {
+const Progress: React.FC = () => {
     const [max, setMax] = useState(0);
     const [value, setValue] = useState(0);
 

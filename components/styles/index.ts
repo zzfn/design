@@ -5,6 +5,7 @@ import '../layout/style'
 import '../progress/style'
 import '../loading/style'
 import '../back-top/style'
+import '../card/style'
 import './theme.scss'
 import './response.scss'
 

@@ -1,11 +1,11 @@
 import babel from '@rollup/plugin-babel'
 import typescript from '@rollup/plugin-typescript';
-import resolve from '@rollup/plugin-node-resolve'
+import {nodeResolve} from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import scss from 'rollup-plugin-scss'
 
 const env = process.env.NODE_ENV;
-const extensions = ['.js', '.jsx', '.ts', '.tsx'];
+const extensions = ['.ts', '.tsx','.js', '.jsx'];
 
 export default {
     input: 'components/index.ts',
@@ -34,14 +34,14 @@ export default {
     external: ['react', 'react-dom'],
     // 插件
     plugins: [
-        resolve(),
+        nodeResolve(),
         commonjs(),
         babel({
             babelHelpers: 'runtime',
             extensions,
             exclude:'node_modules/**'
         }),
-        typescript(),
+        typescript({tsconfig:'./tsconfig.json'}),
         scss({
             output: 'lib/bundle.css',
             prefix: `@import "../../styles/light-theme";`,
