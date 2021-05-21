@@ -10,4 +10,13 @@
   line-height: 40px;
   border-radius: 5px;
   border: 1px dashed #ccc;
+  @media (max-width: 958.98px) {
+    right: 30px;
+    bottom: 30px;
+  }
+  @media (min-width: 960px) {
+    right: 100px;
+    bottom: 50px;
+  }
+
 }

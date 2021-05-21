@@ -4,6 +4,7 @@
 
 .zzf-layout-main {
   flex: 1;
+  padding: 0 16px;
   margin: auto;
 }
 
@@ -19,6 +20,7 @@
   background-color: var(--color-header-bg);
   color: var(--color-header-logo);
   .zzf-layout-header-content{
+    padding: 0 16px;
     margin: auto;
     display: flex;
     justify-content: space-between;
