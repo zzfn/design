@@ -29,12 +29,12 @@ const Loading: React.FC<LoadingProps> = ({children, noMore, onLoad}) => {
         <>
             {children}
             {noMore ? (
-                <section>
+                <section className={'zzf-loading-no-more'}>
                     暂无更多
                 </section>
             ) : (
                 <section ref={loadingRef}>
-                    <section>Loading...</section>
+                    <section className={'zzf-loading-loader'}>Loading...</section>
                 </section>
             )}
         </>
