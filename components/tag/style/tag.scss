@@ -5,9 +5,9 @@
   padding: 0 10px;
   border-radius: 2rem;
   line-height: 22px;
-  color: var(--color-brand);
+  color: var(--color-primary);
   background-color: var(--color-thirdly-bg);
   &:hover{
-    background-color: var(--color-topic-tag-hover-bg);
+    background-color: var(--color-secondary-bg);
   }
 }

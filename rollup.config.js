@@ -45,7 +45,7 @@ export default {
         typescript({tsconfig: './tsconfig.json'}),
         scss({
             output: 'lib/bundle.css',
-            // prefix: `@import "../../styles/light-theme";`,
+            prefix: `@import "../../styles/response";`,
         }),
         copy({
             targets: [

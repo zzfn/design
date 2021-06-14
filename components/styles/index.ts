@@ -6,5 +6,3 @@ import '../progress/style'
 import '../loading/style'
 import '../back-top/style'
 import '../card/style'
-import './response.scss'
-
