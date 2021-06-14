@@ -3,9 +3,10 @@ import typescript from '@rollup/plugin-typescript';
 import {nodeResolve} from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import scss from 'rollup-plugin-scss'
+import copy from 'rollup-plugin-copy'
 
 const env = process.env.NODE_ENV;
-const extensions = ['.ts', '.tsx','.js', '.jsx'];
+const extensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 export default {
     input: 'components/index.ts',
@@ -24,7 +25,7 @@ export default {
             file: `lib/index${env === 'production' ? '.min' : ''}.umd.js`,
             format: 'umd',
             name: 'design',
-            globals:{
+            globals: {
                 'react': 'React',
                 'react-dom': 'ReactDOM',
             },
@@ -39,12 +40,17 @@ export default {
         babel({
             babelHelpers: 'runtime',
             extensions,
-            exclude:'node_modules/**'
+            exclude: 'node_modules/**'
         }),
-        typescript({tsconfig:'./tsconfig.json'}),
+        typescript({tsconfig: './tsconfig.json'}),
         scss({
             output: 'lib/bundle.css',
-            prefix: `@import "../../styles/light-theme";`,
+            // prefix: `@import "../../styles/light-theme";`,
+        }),
+        copy({
+            targets: [
+                {src: ['components/styles/dark-theme.scss','components/styles/light-theme.scss','components/styles/response-theme.scss'], dest: 'lib/style'},
+            ]
         })
     ],
 }
