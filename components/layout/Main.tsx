@@ -1,8 +1,9 @@
 import React from 'react';
+import classNames from "classnames";
 
-const Main: React.FC = ({children}) => {
+const Main: React.FC<classNameProps> = ({children,className}) => {
     return (
-        <main className={'zzf-layout-main zzf-box-responsive-main'}>{children}</main>
+        <main className={classNames('zzf-layout-main','zzf-box-responsive-main',className)}>{children}</main>
     );
 }
 

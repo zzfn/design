@@ -1,4 +1,5 @@
 .zzf-layout {
+  background-color: var(--color-main-bg);
   margin: auto;
 }
 
@@ -19,8 +20,8 @@
   top: 20px;
 }
 .zzf-layout-header {
-  background-color: var(--color-header-bg);
-  color: var(--color-header-logo);
+  background-color: var(--color-main-bg);
+  color: var(--color-primary);
   .zzf-layout-header-content{
     padding: 0 16px;
     margin: auto;

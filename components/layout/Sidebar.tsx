@@ -1,8 +1,9 @@
 import React from 'react';
+import classNames from "classnames";
 
-const Sidebar: React.FC = ({children}) => {
+const Sidebar: React.FC<classNameProps> = ({children,className}) => {
     return (
-        <aside className={'zzf-layout-slider zzf-box-responsive-slider'}>
+        <aside className={classNames('zzf-layout-slider','zzf-box-responsive-slider',className)}>
             {children}
         </aside>
     );
