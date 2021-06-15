@@ -22,7 +22,8 @@
   background-color: var(--color-header-bg);
   color: var(--color-header-logo);
   .zzf-layout-header-content{
-    margin: 0 16px;
+    padding: 0 16px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
