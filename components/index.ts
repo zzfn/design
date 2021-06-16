@@ -1,6 +1,7 @@
 import './styles'
 
 export {Button} from './button'
+export {Input} from './input'
 export {Tag} from './tag'
 export {Tabs} from './tabs'
 export {Layout} from './layout'

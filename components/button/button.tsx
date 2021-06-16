@@ -1,7 +1,12 @@
 import React from 'react';
-const Button: React.FC = ({children}) => {
+
+interface ButtonProps {
+    onClick: () => void
+}
+
+const Button: React.FC<ButtonProps> = ({children, onClick}) => {
     return (
-        <button className={'zzf-btn'}>{children}</button>
+        <button onClick={onClick} className={'zzf-btn'}>{children}</button>
     );
 }
 
