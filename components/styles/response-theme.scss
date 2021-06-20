@@ -1,5 +1,1 @@
-@import "light-theme";
-
-@media (prefers-color-scheme: dark) {
-  @import "dark-theme";
-}
+@import "~@primer/css/index.scss";

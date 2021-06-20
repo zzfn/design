@@ -1,5 +1,5 @@
 .zzf-layout {
-  background-color: var(--color-main-bg);
+  background-color: var(--color-bg-canvas);
   margin: auto;
 }
 
@@ -7,7 +7,7 @@
   flex: 1;
   padding: 0 16px;
   margin: auto;
-  background: var(--color-secondary-bg);
+  background:  var(--color-bg-canvas);
 }
 
 .zzf-layout-content {
@@ -20,8 +20,8 @@
   top: 20px;
 }
 .zzf-layout-header {
-  background-color: var(--color-main-bg);
-  color: var(--color-primary);
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
   .zzf-layout-header-content{
     padding: 0 16px;
     margin: auto;
@@ -33,6 +33,7 @@
 
 .zzf-layout-footer {
   background-color: var(--color-header-bg);
+  color: var(--color-header-text);
   display: flex;
   justify-content: center;
 }

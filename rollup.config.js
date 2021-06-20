@@ -49,7 +49,7 @@ export default {
         }),
         copy({
             targets: [
-                {src: ['components/styles/dark-theme.scss','components/styles/light-theme.scss','components/styles/response-theme.scss'], dest: 'lib/style'},
+                {src: ['components/styles/response-theme.scss'], dest: 'lib/style'},
             ]
         })
     ],
