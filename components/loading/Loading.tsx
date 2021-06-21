@@ -3,9 +3,10 @@ import React, {ElementRef, MutableRefObject, useEffect, useRef} from 'react';
 interface LoadingProps {
     noMore: boolean;
     onLoad: () => void
+    loading: JSX.Element
 }
 
-const Loading: React.FC<LoadingProps> = ({children, noMore, onLoad}) => {
+const Loading: React.FC<LoadingProps> = ({children,loading, noMore, onLoad}) => {
     const loadingRef = useRef<HTMLDivElement>(null);
     const Observer = useRef<IntersectionObserver>();
     useEffect(() => {
@@ -34,7 +35,7 @@ const Loading: React.FC<LoadingProps> = ({children, noMore, onLoad}) => {
                 </section>
             ) : (
                 <section ref={loadingRef}>
-                    <section className={'zzf-loading-loader'}>Loading...</section>
+                    <section>{loading}</section>
                 </section>
             )}
         </>
