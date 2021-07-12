@@ -21,15 +21,15 @@ export default {
             format: 'esm',
             name: 'design',
         },
-        {
-            file: `lib/index${env === 'production' ? '.min' : ''}.umd.js`,
-            format: 'umd',
-            name: 'design',
-            globals: {
-                'react': 'React',
-                'react-dom': 'ReactDOM',
-            },
-        }
+        // {
+        //     file: `lib/index${env === 'production' ? '.min' : ''}.umd.js`,
+        //     format: 'umd',
+        //     name: 'design',
+        //     globals: {
+        //         'react': 'React',
+        //         'react-dom': 'ReactDOM',
+        //     },
+        // }
     ],
     // 将模块视为外部模块，不会打包在库中
     external: ['react', 'react-dom'],
