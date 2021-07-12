@@ -29,6 +29,7 @@ jobs:
           node-version: '12.x'
           registry-url: 'http://212.129.237.18:8081/repository/npm-hosted/'
           always-auth: true
+          scope: '@zzf'
       - run: npm ci
       - run: npm publish
         env:
