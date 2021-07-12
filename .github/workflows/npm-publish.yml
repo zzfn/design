@@ -24,7 +24,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+            
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+          registry-url: 'http://212.129.237.18:8081/repository/npm-hosted/'
+          always-auth: true
+          scope: '@zzf'
+          
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -38,12 +45,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
             
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '12.x'
-          registry-url: 'http://212.129.237.18:8081/repository/npm-hosted/'
-          always-auth: true
-          scope: '@zzf'
       - run: npm ci
       - run: npm run build
       - run: npm publish
