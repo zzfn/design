@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
-    "rollup-production-build": "cross-env NODE_ENV=production rollup -c&&tsc"
+    "build": "cross-env NODE_ENV=production rollup -c&&tsc"
   },
   "repository": {
     "type": "git",
