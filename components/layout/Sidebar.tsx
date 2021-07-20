@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 const Sidebar: React.FC<classNameProps> = ({children,className}) => {
     return (
-        <aside className={classNames('hidden','md:block','zzf-layout-slider','zzf-box-responsive-slider',className)}>
+        <aside className={classNames('zzf-layout-slider','zzf-box-responsive-slider',className)}>
             {children}
         </aside>
     );
