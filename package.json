@@ -1,15 +1,17 @@
 {
   "name": "@zzf/design",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "github风格组件库",
-  "main": "lib/index.min.cjs.js",
-  "module": "lib/index.min.esm.js",
+  "main": "dist/index.min.cjs.js",
+  "module": "dist/index.min.esm.js",
   "typings": "lib/index.d.ts",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "dist/**/*"
   ],
   "scripts": {
     "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
+    "tsc": "tsc",
     "build": "cross-env NODE_ENV=production rollup -c&&tsc"
   },
   "repository": {

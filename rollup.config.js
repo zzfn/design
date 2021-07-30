@@ -12,14 +12,12 @@ export default {
     input: 'components/index.ts',
     output: [
         {
-            file: `lib/index${env === 'production' ? '.min' : ''}.cjs.js`,
+            file: `dist/index${env === 'production' ? '.min' : ''}.cjs.js`,
             format: 'cjs',
-            name: 'design',
         },
         {
-            file: `lib/index${env === 'production' ? '.min' : ''}.esm.js`,
+            file: `dist/index${env === 'production' ? '.min' : ''}.esm.js`,
             format: 'esm',
-            name: 'design',
         }
     ],
     // 将模块视为外部模块，不会打包在库中
@@ -33,14 +31,14 @@ export default {
             extensions,
             exclude: 'node_modules/**'
         }),
-        typescript({tsconfig: './tsconfig.json'}),
+        typescript(),
         scss({
-            output: 'lib/bundle.css',
+            output: 'dist/bundle.css',
             prefix: `@import "../../styles/response";`,
         }),
         copy({
             targets: [
-                {src: ['components/styles/response-theme.scss'], dest: 'lib/style'},
+                {src: ['components/styles/response-theme.scss'], dest: 'dist'},
             ]
         })
     ],

@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "es2020",
+    "target": "ES2015",
+    "module": "esnext",
     "allowJs": true,
     "jsx": "react",
     "declaration": true,
-    "declarationDir": "./lib",
-    "emitDeclarationOnly": true,
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "emitDeclarationOnly": false,
     "downlevelIteration": true,
     "strict": true,
     "noImplicitAny": true,
