@@ -1,7 +1,9 @@
 import React from 'react';
-const Input: React.FC = ({children}) => {
+import classNames from "classnames";
+
+const Input: React.FC<classNameProps> = ({children, className}) => {
     return (
-        <input className={'tls-ipt'}/>
+        <input className={classNames('zzf-ipt', className)}/>
     );
 }
 
