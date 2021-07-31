@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-alpha.6](https://github.com/zzfn/design/compare/v1.1.0-alpha.5...v1.1.0-alpha.6) (2021-07-31)
+
+
+### Features
+
+* 修改card组件 ([978cfdd](https://github.com/zzfn/design/commit/978cfdd94e717f55528c1b03cfae0dc9fffe2e6c))
+
 ## [1.1.0-alpha.5](https://github.com/zzfn/design/compare/v1.1.0-alpha.4...v1.1.0-alpha.5) (2021-07-31)
 
 
