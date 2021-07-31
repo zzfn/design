@@ -15,7 +15,7 @@
     "release": "standard-version",
     "pre-release": "standard-version --prerelease alpha",
     "minor": "standard-version --release-as minor",
-    "major": "standard-version --release-as major",
+    "major": "standard-version --release-as major"
   },
   "repository": {
     "type": "git",
