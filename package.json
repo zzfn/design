@@ -11,8 +11,11 @@
   ],
   "scripts": {
     "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
-    "tsc": "tsc",
-    "build": "cross-env NODE_ENV=production rollup -c&&tsc"
+    "build": "cross-env NODE_ENV=production rollup -c&&tsc",
+    "release": "standard-version",
+    "pre-release": "standard-version --prerelease alpha",
+    "minor": "standard-version --release-as minor",
+    "major": "standard-version --release-as major",
   },
   "repository": {
     "type": "git",
@@ -49,6 +52,7 @@
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-scss": "^2.6.1",
     "semantic-release": "^17.4.4",
+    "standard-version": "^9.3.1",
     "tslib": "^2.0.3",
     "typescript": "^4.1.3"
   },
