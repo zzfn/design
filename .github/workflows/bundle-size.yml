@@ -1,0 +1,20 @@
+
+name: Bundle Size
+
+on:
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Check compressed size
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: preactjs/compressed-size-action@v2
+        with:
+          repo-token: "${{ secrets.GH_TOKEN }}"
