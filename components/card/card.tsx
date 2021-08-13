@@ -2,12 +2,13 @@ import React, {ReactNode} from 'react';
 import classNames from "classnames";
 import {SvgIcon} from "../svg-icon";
 
-interface CardProps extends classNameProps {
+interface CardProps {
+    className: string;
     title?: ReactNode
     icon: string
 }
 
-const Card: React.FC<CardProps> = ({children,icon, title, className}) => {
+const Card: React.FC<CardProps> = ({children, icon, title, className}) => {
     return (
         <section className={classNames('zzf-card', className)}>
             <header className={classNames('zzf-card-header')}>
