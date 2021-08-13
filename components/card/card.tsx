@@ -3,7 +3,7 @@ import classNames from "classnames";
 import {SvgIcon} from "../svg-icon";
 
 interface CardProps {
-    className: string;
+    className?: string;
     title?: ReactNode
     icon: string
 }
