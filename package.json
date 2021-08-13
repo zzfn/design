@@ -7,7 +7,8 @@
   "typings": "lib/index.d.ts",
   "files": [
     "lib/**/*",
-    "dist/**/*"
+    "dist/**/*",
+    "typings/**/*"
   ],
   "scripts": {
     "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
