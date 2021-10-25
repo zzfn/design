@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-alpha.15](https://github.com/zzfn/design/compare/v1.1.0-alpha.14...v1.1.0-alpha.15) (2021-10-25)
+
+
+### Features
+
+* 颜色定制 ([b073f8b](https://github.com/zzfn/design/commit/b073f8b9c6dbd597c1862a48ad4619d1e19aaaca))
+
 ## [1.1.0-alpha.14](https://github.com/zzfn/design/compare/v1.1.0-alpha.13...v1.1.0-alpha.14) (2021-10-25)
 
 
