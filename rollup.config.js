@@ -38,7 +38,7 @@ export default {
         }),
         copy({
             targets: [
-                {src: ['components/styles/_variable_dark.scss','components/styles/_variable_light.scss','components/styles/theme.scss'], dest: 'dist'},
+                {src: ['components/styles/_variable_dark.scss','components/styles/_variable_light.scss','components/styles/_theme.scss'], dest: 'dist'},
             ]
         })
     ],
