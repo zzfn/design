@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-alpha.19](https://github.com/zzfn/design/compare/v1.1.0-alpha.18...v1.1.0-alpha.19) (2021-10-25)
+
+
+### Features
+
+* scss未编译 ([affe0ab](https://github.com/zzfn/design/commit/affe0ab5e0de2e2dc34594c841f5be3b88be32e2))
+
 ## [1.1.0-alpha.18](https://github.com/zzfn/design/compare/v1.1.0-alpha.17...v1.1.0-alpha.18) (2021-10-25)
 
 ## [1.1.0-alpha.17](https://github.com/zzfn/design/compare/v1.1.0-alpha.16...v1.1.0-alpha.17) (2021-10-25)
