@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.4](https://github.com/zzfn/design/compare/v1.2.0-alpha.3...v1.2.0-alpha.4) (2021-10-25)
+
+
+### Features
+
+* button-color ([6506d4e](https://github.com/zzfn/design/commit/6506d4e7aba309b3dfe056b54deed86703250c37))
+
 ## [1.2.0-alpha.3](https://github.com/zzfn/design/compare/v1.2.0-alpha.2...v1.2.0-alpha.3) (2021-10-25)
 
 
