@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.5](https://github.com/zzfn/design/compare/v1.2.0-alpha.4...v1.2.0-alpha.5) (2021-10-27)
+
+
+### Features
+
+* 主题色 ([27dcdcf](https://github.com/zzfn/design/commit/27dcdcf03f1ed48ba6fa4252b2a66f1fe5207f0b))
+
 ## [1.2.0-alpha.4](https://github.com/zzfn/design/compare/v1.2.0-alpha.3...v1.2.0-alpha.4) (2021-10-25)
 
 
