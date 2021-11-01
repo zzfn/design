@@ -1,4 +1,4 @@
-$progress-color: #867ae9;
+
 .zzf-progress {
   position: fixed;
   left: 0;
@@ -11,18 +11,17 @@ $progress-color: #867ae9;
   appearance: none;
   border: none;
   background-color: transparent;
-  color: $progress-color;
+  color: var(--color-text-brand);
 
   &::-webkit-progress-bar {
     background-color: transparent;
   }
 
   &::-webkit-progress-value {
-    background-color: $progress-color;
+    background-color: var(--color-text-brand);
   }
 
   &::-moz-progress-bar {
-    background-color: $progress-color;
-
+    background-color: var(--color-text-brand);
   }
 }

@@ -1,8 +1,7 @@
 .zzf-card {
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid transparent;
-  border-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  border: 1px solid var(--color-border-primary);
   &-header{
     display:flex;
     color: var(--color-text-primary)
