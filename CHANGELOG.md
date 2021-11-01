@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.9](https://github.com/zzfn/design/compare/v1.2.0-alpha.8...v1.2.0-alpha.9) (2021-11-01)
+
+
+### Features
+
+* card 渐变色边框 ([5bd4ec0](https://github.com/zzfn/design/commit/5bd4ec0e994ded17adb854ce26d43798ec027d11))
+
 ## [1.2.0-alpha.8](https://github.com/zzfn/design/compare/v1.2.0-alpha.7...v1.2.0-alpha.8) (2021-11-01)
 
 
