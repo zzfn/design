@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.10](https://github.com/zzfn/design/compare/v1.2.0-alpha.9...v1.2.0-alpha.10) (2021-11-01)
+
+
+### Features
+
+* input button 样式 ([b16fd22](https://github.com/zzfn/design/commit/b16fd2257cf78d46357157e584afdbb0ec19ca8b))
+
 ## [1.2.0-alpha.9](https://github.com/zzfn/design/compare/v1.2.0-alpha.8...v1.2.0-alpha.9) (2021-11-01)
 
 
