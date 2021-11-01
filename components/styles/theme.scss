@@ -1,31 +1,21 @@
 @mixin colors-light {
-  --color-text-link: #0969da;
-  --color-text-inverse: #ffffff;
-  --color-text-primary: #24292f;
-  --color-text-secondary: #57606a;
-  --color-text-tertiary: #6e7781;
-  --color-bg-inverse: #24292f;
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #ffffff;
-  --color-bg-tertiary: #f6f8fa;
+  --color-text-link: #087ea4;
+  --color-text-inverse: #f6f7f9;
+  --color-text-primary: #087ea4;
+  --color-text-secondary: #23272f;
+  --color-text-tertiary: #404756;
+  --color-bg-inverse: #23272F;
+  --color-bg-primary: #e6f7ff;
+  --color-bg-secondary: #fff;
+  --color-bg-tertiary: #f6f7f9;
   --color-border-primary: #d0d7de;
-  --color-border-secondary: hsla(210,18%,87%,1);
-  --color-border-tertiary: rgba(27,31,36,0.15);
-  --color-brand-1:hsl(278, 100%, 96%);
-  --color-brand-2:hsl(276, 84%, 89%);
-  --color-brand-3:hsl(274, 79%, 83%);
-  --color-brand-4:hsl(272, 77%, 76%);
-  --color-brand-5:hsl(270, 76%, 71%);
-  --color-brand-6:hsl(268, 74%, 65%);
-  --color-brand-7:hsl(266, 52%, 50%);
-  --color-brand-8:hsl(264, 65%, 37%);
-  --color-brand-9:hsl(262, 81%, 25%);
-  --color-brand-10:hsl(260, 100%, 15%);
+  --color-border-secondary: hsla(210, 18%, 87%, 1);
+  --color-border-tertiary: rgba(27, 31, 36, 0.15);
 }
 
 
 @mixin colors-dark {
-  --color-text-link: #58a6ff;
+  --color-text-link: hsla(195, 82%, 44%, 1);
   --color-text-inverse: #f0f6fc;
   --color-text-primary: #c9d1d9;
   --color-text-secondary: #8b949e;
@@ -36,16 +26,6 @@
   --color-bg-tertiary: #010409;
   --color-border-primary: #30363d;
   --color-border-secondary: #21262d;
-  --color-border-tertiary: rgba(240,246,252,0.1);
-  --color-brand-1:hsl(259, 100%, 15%);
-  --color-brand-2:hsl(262, 83%, 25%);
-  --color-brand-3:hsl(264, 65%, 37%);
-  --color-brand-4:hsl(266, 51%, 50%);
-  --color-brand-5:hsl(268, 73%, 66%);
-  --color-brand-6:hsl(268, 74%, 65%);
-  --color-brand-7:hsl(272, 74%, 79%);
-  --color-brand-8:hsl(273, 77%, 85%);
-  --color-brand-9:hsl(277, 80%, 90%);
-  --color-brand-10:hsl(279, 100%, 97%);
+  --color-border-tertiary: rgba(240, 246, 252, 0.1);
 }
 
