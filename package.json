@@ -1,6 +1,6 @@
 {
   "name": "@zzf/design",
-  "version": "1.2.0-alpha.6",
+  "version": "1.2.0-alpha.7",
   "description": "github风格组件库",
   "main": "dist/index.min.cjs.js",
   "module": "dist/index.min.esm.js",
