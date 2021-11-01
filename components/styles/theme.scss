@@ -1,31 +1,43 @@
 @mixin colors-light {
-  --color-text-link: #087ea4;
+  //品牌色
+  --color-text-brand: #087ea4;
+  --color-bg-brand: #e6f7ff;
+  //功能色
   --color-text-inverse: #f6f7f9;
-  --color-text-primary: #087ea4;
-  --color-text-secondary: #23272f;
-  --color-text-tertiary: #404756;
   --color-bg-inverse: #23272F;
-  --color-bg-primary: #e6f7ff;
-  --color-bg-secondary: #fff;
-  --color-bg-tertiary: #f6f7f9;
-  --color-border-primary: #d0d7de;
-  --color-border-secondary: hsla(210, 18%, 87%, 1);
-  --color-border-tertiary: rgba(27, 31, 36, 0.15);
+  --color-text-button: #fff;
+  --color-bg-button: #087ea4;
+  //中性色
+  --color-text-primary: #23272f;
+  --color-text-secondary: #404756;
+  //--color-text-tertiary: #404756;
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #f6f7f9;
+  //--color-bg-tertiary: #f6f7f9;
+  //--color-border-primary: #d0d7de;
+  //--color-border-secondary: hsla(210, 18%, 87%, 1);
+  //--color-border-tertiary: rgba(27, 31, 36, 0.15);
 }
 
 
 @mixin colors-dark {
-  --color-text-link: hsla(195, 82%, 44%, 1);
-  --color-text-inverse: #f0f6fc;
-  --color-text-primary: #c9d1d9;
-  --color-text-secondary: #8b949e;
-  --color-text-tertiary: #484f58;
-  --color-bg-inverse: #161b22;
-  --color-bg-primary: #0d1117;
-  --color-bg-secondary: #161b22;
-  --color-bg-tertiary: #010409;
-  --color-border-primary: #30363d;
-  --color-border-secondary: #21262d;
-  --color-border-tertiary: rgba(240, 246, 252, 0.1);
+  //品牌色
+  --color-text-brand: #149eca;
+  --color-bg-brand: rgba(88,175,223,.1);
+  //功能色
+  --color-text-inverse: #f6f7f9;
+  --color-bg-inverse: #23272F;
+  --color-text-button: #fff;
+  --color-bg-button: #087ea4;
+  //中性色
+  --color-text-primary: #f6f7f9;
+  --color-text-secondary: #ebecf0;
+  //--color-text-tertiary: #404756;
+  --color-bg-primary: rgba(35,39,47,1);
+  --color-bg-secondary: #343a46;
+  //--color-bg-tertiary: #f6f7f9;
+  //--color-border-primary: #d0d7de;
+  //--color-border-secondary: hsla(210, 18%, 87%, 1);
+  //--color-border-tertiary: rgba(27, 31, 36, 0.15);
 }
 
