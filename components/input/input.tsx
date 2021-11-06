@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from "classnames";
 
-interface InputType extends classNameProps {
+interface InputType {
+    className?: string;
     type?: string;
     autoFocus?: boolean;
     placeholder?: string;
