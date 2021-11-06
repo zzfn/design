@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.12](https://github.com/zzfn/design/compare/v1.2.0-alpha.11...v1.2.0-alpha.12) (2021-11-06)
+
+
+### Bug Fixes
+
+* card button input UI ([3280a67](https://github.com/zzfn/design/commit/3280a67e28967026f6fc81cd602750c6caba1d72))
+
 ## [1.2.0-alpha.11](https://github.com/zzfn/design/compare/v1.2.0-alpha.10...v1.2.0-alpha.11) (2021-11-01)
 
 
