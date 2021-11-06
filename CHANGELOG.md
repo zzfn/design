@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.16](https://github.com/zzfn/design/compare/v1.2.0-alpha.15...v1.2.0-alpha.16) (2021-11-06)
+
+
+### Bug Fixes
+
+* input style import ([6267dbc](https://github.com/zzfn/design/commit/6267dbcd0a084d348c52d4ff97bfd0bbda9e72ff))
+
 ## [1.2.0-alpha.15](https://github.com/zzfn/design/compare/v1.2.0-alpha.14...v1.2.0-alpha.15) (2021-11-06)
 
 
