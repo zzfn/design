@@ -13,6 +13,8 @@
   transition: .2s cubic-bezier(.3,0,.5,1);
   transition-property: color,background-color,border-color;
   &:hover{
+    background-color: var(--color-bg-brand);
+    color: var(--color-text-brand);
     opacity: .8;
     transition-duration: .1s;
   }
