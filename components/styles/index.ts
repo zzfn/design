@@ -1,4 +1,5 @@
 import '../button/style'
+import '../input/style'
 import '../tag/style'
 import '../tabs/style'
 import '../layout/style'
