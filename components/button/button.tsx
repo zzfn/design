@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 interface ButtonProps {
     className?: string;
-    onClick?: () => void
+    onClick?: (event:React.MouseEvent<HTMLButtonElement>) => void
 }
 
 const Button: React.FC<ButtonProps> = ({children,className, onClick}) => {
