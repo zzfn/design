@@ -49,7 +49,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm run build
+
+      - name: Build
+        run: npm run build
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
