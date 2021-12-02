@@ -53,6 +53,6 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - run: pnpm publish --tag alpha
+      - run: npm publish --tag alpha
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

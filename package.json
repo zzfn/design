@@ -14,10 +14,9 @@
     "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c&&tsc",
     "release": "standard-version",
-    "pre-release:alpha": "standard-version --prerelease alpha",
-    "pre-release": "standard-version --prerelease",
+    "patch:alpha": "standard-version --prerelease alpha",
+    "patch": "standard-version --prerelease",
     "minor": "standard-version --release-as minor",
-    "patch": "standard-version --release-as patch",
     "major": "standard-version --release-as major",
     "lint": "eslint components/**/*.tsx"
   },
