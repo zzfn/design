@@ -1,6 +1,6 @@
 {
   "name": "@zzf/design",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "github风格组件库",
   "main": "dist/index.min.cjs.js",
   "module": "dist/index.min.esm.js",
@@ -17,6 +17,7 @@
     "pre-release:alpha": "standard-version --prerelease alpha",
     "pre-release": "standard-version --prerelease",
     "minor": "standard-version --release-as minor",
+    "patch": "standard-version --release-as patch",
     "major": "standard-version --release-as major",
     "lint": "eslint components/**/*.tsx"
   },
