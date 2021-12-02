@@ -14,10 +14,11 @@
     "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c&&tsc",
     "release": "standard-version",
-    "pre-release": "standard-version --prerelease alpha",
+    "pre-release:alpha": "standard-version --prerelease alpha",
+    "pre-release": "standard-version --prerelease",
     "minor": "standard-version --release-as minor",
     "major": "standard-version --release-as major",
-    "test": "eslint components/**/*.tsx --fix"
+    "lint": "eslint components/**/*.tsx"
   },
   "repository": {
     "type": "git",
