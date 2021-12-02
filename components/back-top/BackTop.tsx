@@ -4,7 +4,7 @@ const BackTop: React.FC = ({children}) => {
     const [isShow, setIsShow] = useState(false)
 
     function handleIsShow() {
-        if (document.documentElement.scrollTop > 40) {
+        if (document.documentElement.scrollTop > 60) {
             setIsShow(true)
         } else {
             setIsShow(false)

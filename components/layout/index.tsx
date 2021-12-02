@@ -13,13 +13,6 @@ interface InterfaceLayout {
     Header:typeof Header,
     Footer:typeof Footer,
 }
-// const Layout:InterfaceLayout = {
-//     Main,
-//     Content,
-//     Sidebar,
-//     Header,
-//     Footer
-// }
 
 interface LayoutType extends React.FC<BasicProps> {
     Header: typeof Header;

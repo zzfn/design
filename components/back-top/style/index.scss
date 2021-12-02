@@ -1,22 +1,12 @@
 .zzf-back-top {
   position: fixed;
-  right: 100px;
-  bottom: 50px;
-  width: 40px;
-  height: 40px;
-  color: #fff;
   cursor: pointer;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5px;
-  border: 1px dashed #ccc;
-  @media (max-width: 958.98px) {
-    right: 30px;
-    bottom: 30px;
+  @media (max-width: 1023.98px) {
+    right: 60px;
+    bottom: 60px;
   }
-  @media (min-width: 960px) {
-    right: 100px;
-    bottom: 50px;
+  @media (min-width: 1024px) {
+    right: calc((100vw - 1024px) / 2);
+    bottom: 60px;
   }
-
 }
