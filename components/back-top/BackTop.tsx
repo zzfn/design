@@ -1,33 +1,33 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react'
 
-const BackTop: React.FC = ({children}) => {
-    const [isShow, setIsShow] = useState(false)
+const BackTop: React.FC = ({ children }) => {
+  const [isShow, setIsShow] = useState(false)
 
-    function handleIsShow() {
-        if (document.documentElement.scrollTop > 60) {
-            setIsShow(true)
-        } else {
-            setIsShow(false)
-        }
+  function handleIsShow () {
+    if (document.documentElement.scrollTop > 60) {
+      setIsShow(true)
+    } else {
+      setIsShow(false)
     }
+  }
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleIsShow);
-        return () => {
-            window.removeEventListener('scroll', handleIsShow)
-        }
-    }, [])
-    return (
+  useEffect(() => {
+    window.addEventListener('scroll', handleIsShow)
+    return () => {
+      window.removeEventListener('scroll', handleIsShow)
+    }
+  }, [])
+  return (
         <>
             {
                 isShow && <div onClick={() => {
-                    scrollTo({top: 0})
+                  scrollTo({ top: 0 })
                 }} className={'zzf-back-top'}>
                     {children}
                 </div>
             }
         </>
-    );
+  )
 }
 
-export default BackTop;
+export default BackTop

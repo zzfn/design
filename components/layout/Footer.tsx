@@ -1,14 +1,16 @@
-import React from 'react';
-import classNames from "classnames";
-
-const Footer: React.FC<classNameProps> = ({children, className}) => {
-    return (
+import React from 'react'
+import classNames from 'classnames'
+interface FooterProps {
+    className?: string;
+}
+const Footer: React.FC<FooterProps> = ({ children, className }) => {
+  return (
         <footer className={'zzf-layout-footer'}>
             <section className={classNames('zzf-box-responsive-main', className)}>
                 {children}
             </section>
         </footer>
-    );
+  )
 }
 
-export default Footer;
+export default Footer

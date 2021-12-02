@@ -1,6 +1,6 @@
-import React, {ReactNode} from 'react';
-import classNames from "classnames";
-import {SvgIcon} from "../svg-icon";
+import React, { ReactNode } from 'react'
+import classNames from 'classnames'
+import { SvgIcon } from '../svg-icon'
 
 interface CardProps {
     className?: string;
@@ -8,8 +8,8 @@ interface CardProps {
     icon: string
 }
 
-const Card: React.FC<CardProps> = ({children, icon, title, className}) => {
-    return (
+const Card: React.FC<CardProps> = ({ children, icon, title, className }) => {
+  return (
         <section className={classNames('zzf-card', className)}>
             <header className={classNames('zzf-card-header')}>
                 <SvgIcon size={20} name={icon}/>
@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({children, icon, title, className}) => {
             </header>
             {children}
         </section>
-    );
+  )
 }
 
-export default Card;
+export default Card

@@ -1,18 +1,10 @@
-import Footer from "./Footer";
-import Content from "./Content";
+import Footer from './Footer'
+import Content from './Content'
 import Sidebar from './Sidebar'
-import Header from "./Header";
+import Header from './Header'
 import Main from './Main'
-import Basic, {BasicProps} from './Basic'
-import React from "react";
-
-interface InterfaceLayout {
-    Main:typeof Main,
-    Content:typeof Content,
-    Sidebar:typeof Sidebar,
-    Header:typeof Header,
-    Footer:typeof Footer,
-}
+import Basic, { BasicProps } from './Basic'
+import React from 'react'
 
 interface LayoutType extends React.FC<BasicProps> {
     Header: typeof Header;
@@ -22,12 +14,12 @@ interface LayoutType extends React.FC<BasicProps> {
     Sidebar: typeof Sidebar;
 }
 
-const Layout = Basic as LayoutType;
+const Layout = Basic as LayoutType
 
-Layout.Header = Header;
-Layout.Footer = Footer;
-Layout.Content = Content;
-Layout.Sidebar = Sidebar;
-Layout.Main = Main;
+Layout.Header = Header
+Layout.Footer = Footer
+Layout.Content = Content
+Layout.Sidebar = Sidebar
+Layout.Main = Main
 
-export {Layout}
+export { Layout }

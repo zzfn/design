@@ -1,5 +1,5 @@
-import React from 'react';
-import classNames from "classnames";
+import React from 'react'
+import classNames from 'classnames'
 
 interface InputType {
     className?: string;
@@ -11,12 +11,12 @@ interface InputType {
 }
 
 const Input: React.FC<InputType> = (props) => {
-    const {type = 'text', className, autoFocus = false, placeholder, value, onChange} = props;
+  const { type = 'text', className, autoFocus = false, placeholder, value, onChange } = props
 
-    return (
+  return (
         <input value={value} onChange={onChange} placeholder={placeholder} autoFocus={autoFocus} type={type}
                className={classNames('zzf-ipt', className)}/>
-    );
+  )
 }
 
-export default Input;
+export default Input
