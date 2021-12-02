@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-alpha.17](https://github.com/zzfn/design/compare/v1.2.0-alpha.16...v1.2.0-alpha.17) (2021-12-02)
+
+
+### Features
+
+* ts 类型完善 ([d5fe983](https://github.com/zzfn/design/commit/d5fe983ace0b492dc3d340929d1ef90517c55b4f))
+* 修改样式 ([2aa9cbf](https://github.com/zzfn/design/commit/2aa9cbf408549d3b86b0dd2e5bde9084a5947e7a))
+
 ## [1.2.0-alpha.16](https://github.com/zzfn/design/compare/v1.2.0-alpha.15...v1.2.0-alpha.16) (2021-11-06)
 
 
