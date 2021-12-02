@@ -51,7 +51,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - run: npm publish
         env:
