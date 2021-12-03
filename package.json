@@ -11,7 +11,7 @@
     "typings/**/*"
   ],
   "scripts": {
-    "rollup-build": "cross-env BABEL_ENV=rollup rollup -c -w",
+    "rollup-build": "cross-env NODE_ENV=production BABEL_ENV=rollup rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c&&tsc",
     "release": "standard-version",
     "patch:alpha": "standard-version --prerelease alpha",
