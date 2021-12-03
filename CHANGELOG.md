@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4-alpha.4](https://github.com/zzfn/design/compare/v1.2.4-alpha.3...v1.2.4-alpha.4) (2021-12-03)
+
+
+### Bug Fixes
+
+* 布局修改 ([2f6d90c](https://github.com/zzfn/design/commit/2f6d90ce2e967a74e0a1b65590fed8f76f092116))
+* 打包修改 ([c97f185](https://github.com/zzfn/design/commit/c97f18503f30b9e7b3f086ae5eb6b26c9854b3e6))
+
 ### [1.2.4-alpha.3](https://github.com/zzfn/design/compare/v1.2.4-alpha.2...v1.2.4-alpha.3) (2021-12-03)
 
 ### [1.2.4-alpha.2](https://github.com/zzfn/design/compare/v1.2.4-alpha.1...v1.2.4-alpha.2) (2021-12-03)
