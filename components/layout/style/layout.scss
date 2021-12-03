@@ -19,6 +19,7 @@
 }
 
 .zzf-layout-header {
+  z-index: 1;
   position: sticky;
   top: 0;
   background-color: var(--color-bg-inverse);
