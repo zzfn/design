@@ -11,11 +11,10 @@
     "typings/**/*"
   ],
   "scripts": {
-    "rollup-build": "cross-env NODE_ENV=production BABEL_ENV=rollup rollup -c -w",
+    "rollup-build": "cross-env NODE_ENV=production rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c&&tsc",
-    "release": "standard-version",
     "patch:alpha": "standard-version --prerelease alpha",
-    "patch": "standard-version --prerelease",
+    "patch": "standard-version",
     "minor": "standard-version --release-as minor",
     "major": "standard-version --release-as major",
     "lint": "eslint components/**/*.tsx"
