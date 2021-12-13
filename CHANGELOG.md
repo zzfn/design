@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0-alpha.0](https://github.com/zzfn/design/compare/v1.2.4-alpha.6...v1.3.0-alpha.0) (2021-12-13)
+
+
+### Features
+
+* 最大宽度修改 ([f0fc403](https://github.com/zzfn/design/commit/f0fc40350f4ccabb334dc0ad0ba36130845d7128))
+
 ### [1.2.4-alpha.6](https://github.com/zzfn/design/compare/v1.2.4-alpha.5...v1.2.4-alpha.6) (2021-12-03)
 
 
