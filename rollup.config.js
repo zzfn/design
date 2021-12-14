@@ -5,9 +5,10 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import scss from 'rollup-plugin-scss'
 import copy from 'rollup-plugin-copy'
+import postcss from 'rollup-plugin-postcss'
+import cssnano from 'cssnano';
 
 const env = process.env.NODE_ENV
-const extensions = ['.ts', '.tsx', '.js', '.jsx']
 
 export default {
   input: 'components/index.ts',
@@ -32,7 +33,6 @@ export default {
     commonjs(),
     babel({
       babelHelpers: 'runtime',
-      extensions,
       exclude: 'node_modules/**'
     }),
     typescript(),
@@ -40,10 +40,15 @@ export default {
       output: 'dist/bundle.css',
       prefix: '@import "../../styles/response";'
     }),
+    postcss({
+      plugins: [
+        cssnano()
+      ]
+    }),
     copy({
       targets: [
         {
-          src: ['components/styles/variable_dark.scss', 'components/styles/variable_light.scss', 'components/styles/theme.scss'],
+          src: ['components/styles/theme.scss'],
           dest: 'dist'
         }
       ]
