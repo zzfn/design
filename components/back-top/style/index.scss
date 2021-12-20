@@ -6,15 +6,11 @@
     bottom: 60px;
   }
   @media (min-width: 1024px) {
-    right: calc((100vw - 1024px) / 2);
+    right: calc((100vw - 1000px) / 2);
     bottom: 60px;
   }
   @media (min-width: 1280px) {
-    right: calc((100vw - 1280px) / 2);
-    bottom: 60px;
-  }
-  @media (min-width: 1536px) {
-    right: calc((100vw - 1536px) / 2);
+    right: calc((100vw - 1200px) / 2);
     bottom: 60px;
   }
 }
