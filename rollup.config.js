@@ -1,4 +1,3 @@
-import babel from '@rollup/plugin-babel'
 import esbuild from 'rollup-plugin-esbuild'
 import typescript from '@rollup/plugin-typescript'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
@@ -31,10 +30,6 @@ export default {
     }),
     nodeResolve(),
     commonjs(),
-    babel({
-      babelHelpers: 'runtime',
-      exclude: 'node_modules/**'
-    }),
     typescript(),
     scss({
       output: 'dist/bundle.css',
