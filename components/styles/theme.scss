@@ -1,7 +1,8 @@
 @mixin colors-light {
   //品牌色
-  --color-text-brand: #087ea4;
-  --color-bg-brand: #e6f7ff;
+  --color-text-brand: hsl(245deg, 100%, 60%);
+  --color-text-info: hsl(333deg, 100%, 45%);
+  --color-bg-brand: hsl(204deg, 67%, 85%);
   //功能色
   --color-text-inverse: #f6f7f9;
   --color-bg-inverse: #23272F;
@@ -11,7 +12,7 @@
   --color-text-primary: #23272f;
   --color-text-secondary: #404756;
   //--color-text-tertiary: #404756;
-  --color-bg-primary: #fff;
+  --color-bg-primary: hsl(0, 0%, 100%);
   --color-bg-secondary: #f6f7f9;
   //--color-bg-tertiary: #f6f7f9;
   --color-border-brand: #087ea4;
@@ -23,8 +24,9 @@
 
 @mixin colors-dark {
   //品牌色
-  --color-text-brand: #149eca;
-  --color-bg-brand: rgba(88,175,223,.1);
+  --color-text-brand: hsl(230deg, 100%, 67%);
+  --color-text-info: hsl(333deg, 100%, 52%);
+  --color-bg-brand: hsla(200deg, 100%, 85%, 0.1);
   //功能色
   --color-text-inverse: #f6f7f9;
   --color-bg-inverse: #23272F;
@@ -34,7 +36,7 @@
   --color-text-primary: #f6f7f9;
   --color-text-secondary: #ebecf0;
   //--color-text-tertiary: #404756;
-  --color-bg-primary: rgba(35,39,47,1);
+  --color-bg-primary: hsl(210deg, 30%, 8%);
   --color-bg-secondary: #343a46;
   //--color-bg-tertiary: #f6f7f9;
   --color-border-brand: #149eca;
