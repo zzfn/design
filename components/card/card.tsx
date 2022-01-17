@@ -5,14 +5,14 @@ import { SvgIcon } from '../svg-icon'
 interface CardProps {
     className?: string;
     title?: ReactNode
-    icon: string
+    icon?: string
 }
 
 const Card: React.FC<CardProps> = ({ children, icon, title, className }) => {
   return (
         <section className={classNames('zzf-card', className)}>
             <header className={classNames('zzf-card-header')}>
-                <SvgIcon size={20} name={icon}/>
+                {icon && <SvgIcon size={20} name={icon}/>}
                 <span>{title}</span>
             </header>
             {children}
