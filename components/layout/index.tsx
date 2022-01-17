@@ -3,7 +3,7 @@ import Content from './Content'
 import Sidebar from './Sidebar'
 import Header from './Header'
 import Main from './Main'
-import Basic, {BasicProps} from './Basic'
+import Basic, { BasicProps } from './Basic'
 import React from 'react'
 
 interface LayoutType extends React.FC<BasicProps> {
@@ -22,4 +22,4 @@ Layout.Content = Content
 Layout.Sidebar = Sidebar
 Layout.Main = Main
 
-export {Layout}
+export { Layout }
