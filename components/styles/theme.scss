@@ -20,26 +20,14 @@
 
 
 @mixin colors-dark {
-  //品牌色
-  --color-text-brand: hsl(230deg, 100%, 67%);
-  --color-text-info: hsl(333deg, 100%, 52%);
-  --color-bg-brand: hsla(200deg, 100%, 85%, 0.1);
-  //功能色
-  --color-text-inverse: #f6f7f9;
-  --color-bg-inverse: #23272F;
-  --color-text-button: #fff;
-  --color-bg-button: #087ea4;
-  //中性色
-  --color-text-primary: #f6f7f9;
-  --color-text-secondary: #ebecf0;
-  //--color-text-tertiary: #404756;
-  --color-bg-primary: hsl(230deg, 100%, 67%);
-  --color-bg-secondary: hsl(333deg, 100%, 52%);
-  --color-bg-tertiary: hsl(53deg, 100%, 50%);
-  --color-border-brand: #149eca;
-  --color-border-primary: #343a46;
-  //--color-border-secondary: hsla(210, 18%, 87%, 1);
-  //--color-border-tertiary: rgba(27, 31, 36, 0.15);
+  --color-text-info: hsl(0deg, 0%, 100%);
+  --color-text-primary: hsl(230deg, 100%, 67%);
+  --color-text-secondary:hsl(333deg, 100%, 52%);
+  --color-text-tertiary: hsl(333deg, 100%, 52%);
+  --color-bg-primary:hsl(210deg, 30%, 8%);
+  --color-bg-secondary: hsla(210deg, 30%, 8%, 0.85);
+  --color-bg-tertiary: hsla(210deg, 38%, 15%, 0.85);
+  --color-bg-decorative: hsl(200deg, 50%, 60%);
   --color-gray-100: hsl(210deg, 15%, 20%);
   --color-gray-200: hsl(210deg, 15%, 25%);
   --color-gray-300: hsl(210deg, 10%, 40%);
