@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ children, icon, title, className }) => {
         <section className={classNames('zzf-card', className)}>
             <header className={classNames('zzf-card-header')}>
                 {icon && <SvgIcon size={20} name={icon}/>}
-                <span>{title}</span>
+                <span className={'zzf-card-header-text'}>{title}</span>
             </header>
             {children}
         </section>
