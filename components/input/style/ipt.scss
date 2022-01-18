@@ -2,13 +2,16 @@
   padding: 5px 12px;
   font-size: 14px;
   line-height: 20px;
-  color: var(--color-text-primary);
+  color: var(--color-text-info);
   vertical-align: middle;
   background-color: var(--color-bg-primary);
   background-repeat: no-repeat;
   background-position: right 8px center;
-  border: 1px solid var(--color-border-primary);
-  border-radius: 6px;
+  border-bottom: 2px solid var(--color-text-info);
   outline: none;
-  width: 100%
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  &:focus {
+    border-color: var(--color-text-primary);
+  }
 }

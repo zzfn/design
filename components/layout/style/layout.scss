@@ -20,8 +20,8 @@
   z-index: 1;
   position: sticky;
   top: 0;
-  background-color: var(--color-bg-brand);
-  color: var(--color-text-secondary);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-info);
 
   .zzf-layout-header-content {
     padding: 0 16px;
@@ -33,8 +33,8 @@
 }
 
 .zzf-layout-footer {
-  background-color: var(--color-bg-brand);
-  color: var(--color-text-secondary);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-info);
   display: flex;
   justify-content: center;
 }

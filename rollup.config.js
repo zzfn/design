@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import scss from 'rollup-plugin-scss'
 import copy from 'rollup-plugin-copy'
 import postcss from 'rollup-plugin-postcss'
-import cssnano from 'cssnano';
+import cssnano from 'cssnano'
 
 const env = process.env.NODE_ENV
 
@@ -13,11 +13,11 @@ export default {
   input: 'components/index.ts',
   output: [
     {
-      file: `dist/index${env === 'production' ? '.min' : ''}.cjs.js`,
+      file: `dist/index${env === 'production' ? '.min' : ''}.js`,
       format: 'cjs'
     },
     {
-      file: `dist/index${env === 'production' ? '.min' : ''}.esm.js`,
+      file: `dist/index${env === 'production' ? '.min' : ''}.mjs`,
       format: 'esm'
     }
   ],

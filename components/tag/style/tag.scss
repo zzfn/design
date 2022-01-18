@@ -1,9 +1,10 @@
 .zzf-tag {
   display: inline-block;
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-brand);
+  color: var(--color-gray-1000);
+  background-color: var(--color-bg-decorative);
+  font-weight: var(--font-weight-medium);
   font-size: 12px;
-  border-radius: 6px;
+  border-radius: 8px;
   line-height: 22px;
-  padding:0 8px;
+  padding: 3px 12px;
 }
