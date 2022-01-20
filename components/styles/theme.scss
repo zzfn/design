@@ -7,6 +7,8 @@
   --color-bg-secondary: hsla(0deg, 0%, 100%, 0.85);
   --color-bg-tertiary: hsla(210deg, 55%, 92%, 0.85);
   --color-bg-decorative: hsl(200, 72%, 80%);
+  --color-bg-syntax: hsl(225deg, 25%, 97%);
+  --color-bg-muted: hsla(210deg, 55%, 92%, 0.85);
   --color-gray-100: hsl(225deg, 25%, 95%);
   --color-gray-200: hsl(225deg, 16%, 90%);
   --color-gray-300: hsl(225deg, 8%, 80%);
@@ -22,12 +24,14 @@
 @mixin colors-dark {
   --color-text-info: hsl(0deg, 0%, 100%);
   --color-text-primary: hsl(230deg, 100%, 67%);
-  --color-text-secondary:hsl(333deg, 100%, 52%);
-  --color-text-tertiary: hsl(333deg, 100%, 52%);
-  --color-bg-primary:hsl(210deg, 30%, 8%);
+  --color-text-secondary: hsl(333deg, 100%, 52%);
+  --color-text-tertiary: hsl(53deg, 100%, 50%);
+  --color-bg-primary: hsl(210deg, 30%, 8%);
   --color-bg-secondary: hsla(210deg, 30%, 8%, 0.85);
   --color-bg-tertiary: hsla(210deg, 38%, 15%, 0.85);
   --color-bg-decorative: hsl(200deg, 50%, 60%);
+  --color-bg-syntax: hsl(210deg, 30%, 12%);
+  --color-bg-muted: hsla(210deg, 38%, 15%, 0.85);
   --color-gray-100: hsl(210deg, 15%, 20%);
   --color-gray-200: hsl(210deg, 15%, 25%);
   --color-gray-300: hsl(210deg, 10%, 40%);
@@ -39,12 +43,12 @@
   --color-gray-1000: hsl(210deg, 25%, 96%);
 }
 
-@mixin font{
+@mixin font {
   --font-weight-bold: 600;
   --font-weight-medium: 500;
   --font-weight-light: 400;
-  --font-family: "Wotfard",Futura,-apple-system,sans-serif;
-  --font-family-mono: "League Mono","Fira Mono",monospace;
-  --font-family-spicy: "Sriracha","Wotfard",Futura,-apple-system,sans-serif;
+  --font-family: "Wotfard", Futura, -apple-system, sans-serif;
+  --font-family-mono: "League Mono", "Fira Mono", monospace;
+  --font-family-spicy: "Sriracha", "Wotfard", Futura, -apple-system, sans-serif;
   --reach-dialog: 1;
 }
