@@ -1,3 +1,4 @@
+$bg: var(--color-bg-decorative);
 .zzf-tag {
   display: inline-block;
   color: var(--color-gray-1000);
@@ -7,4 +8,8 @@
   border-radius: 8px;
   line-height: 22px;
   padding: 3px 12px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
