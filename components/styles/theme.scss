@@ -6,7 +6,7 @@
   --color-bg-primary: hsl(0deg, 0%, 100%);
   --color-bg-secondary: hsl(225deg, 25%, 95%);
   --color-bg-tertiary: hsla(210deg, 55%, 92%, 0.85);
-  --color-bg-decorative: hsl(200, 72%, 80%);
+  --color-bg-decorative: hsla(200, 72%, 80%,0.35);
   --color-bg-syntax: hsl(225deg, 25%, 97%);
   --color-bg-muted: hsla(210deg, 55%, 92%, 0.85);
   --color-gray-100: hsl(225deg, 25%, 95%);
@@ -29,7 +29,7 @@
   --color-bg-primary: hsl(210deg, 30%, 8%);
   --color-bg-secondary: hsl(210deg, 22%, 15%);
   --color-bg-tertiary: hsla(210deg, 38%, 15%, 0.85);
-  --color-bg-decorative: hsl(200deg, 50%, 60%);
+  --color-bg-decorative: hsla(200deg, 50%, 60%,0.35);
   --color-bg-syntax: hsl(210deg, 30%, 12%);
   --color-bg-muted: hsla(210deg, 38%, 15%, 0.85);
   --color-gray-100: hsl(210deg, 15%, 20%);
@@ -41,14 +41,4 @@
   --color-gray-700: hsl(210deg, 14%, 66%);
   --color-gray-900: hsl(210deg, 25%, 88%);
   --color-gray-1000: hsl(210deg, 25%, 96%);
-}
-
-@mixin font {
-  --font-weight-bold: 700;
-  --font-weight-medium: 500;
-  --font-weight-light: 400;
-  --font-family: "Wotfard", Futura, -apple-system, sans-serif;
-  --font-family-mono: "League Mono", "Fira Mono", monospace;
-  --font-family-spicy: "Sriracha", "Wotfard", Futura, -apple-system, sans-serif;
-  --reach-dialog: 1;
 }
