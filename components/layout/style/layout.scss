@@ -1,5 +1,7 @@
+$primary: var(--color-bg-primary);
+$secondary: var(--color-bg-secondary);
 .zzf-layout {
-  background-color: var(--color-bg-primary);
+  background-color: $primary;
   margin: auto;
 }
 
@@ -7,7 +9,7 @@
   flex: 1;
   padding: 0 16px;
   margin: auto;
-  background: var(--color-bg-primary);
+  background: $primary;
 }
 
 .zzf-layout-slider {
@@ -20,7 +22,7 @@
   z-index: 1;
   position: sticky;
   top: 0;
-  background-color: var(--color-bg-tertiary);
+  background-color: $secondary;
   color: var(--color-text-info);
 
   .zzf-layout-header-content {
@@ -33,7 +35,7 @@
 }
 
 .zzf-layout-footer {
-  background-color: var(--color-bg-tertiary);
+  background-color: $secondary;
   color: var(--color-text-info);
   display: flex;
   justify-content: center;
