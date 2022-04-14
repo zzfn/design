@@ -10,8 +10,8 @@ specifiers:
   '@rollup/plugin-commonjs': ^17.0.0
   '@rollup/plugin-node-resolve': ^11.2.1
   '@rollup/plugin-typescript': ^8.1.0
-  '@types/react': ^18.0.5
-  '@types/react-dom': ^18.0.0
+  '@types/react': ^17.0.0
+  '@types/react-dom': ^17.0.0
   '@typescript-eslint/eslint-plugin': ^5.5.0
   '@typescript-eslint/parser': ^5.5.0
   classnames: ^2.3.1
@@ -50,8 +50,8 @@ devDependencies:
   '@rollup/plugin-commonjs': 17.1.0_rollup@2.60.2
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.60.2
   '@rollup/plugin-typescript': 8.3.0_cf49768e670184c7e0e13e8a66db2d3a
-  '@types/react': 18.0.5
-  '@types/react-dom': 18.0.0
+  '@types/react': 17.0.44
+  '@types/react-dom': 17.0.15
   '@typescript-eslint/eslint-plugin': 5.5.0_2a935f58a3cc0b0f42856ccf18d8367f
   '@typescript-eslint/parser': 5.5.0_eslint@8.3.0+typescript@4.5.2
   cross-env: 7.0.3
@@ -1709,14 +1709,14 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.0.0:
-    resolution: {integrity: sha512-49897Y0UiCGmxZqpC8Blrf6meL8QUla6eb+BBhn69dTXlmuOlzkfr7HHY/O8J25e1lTUMs+YYxSlVDAaGHCOLg==}
+  /@types/react-dom/17.0.15:
+    resolution: {integrity: sha512-Tr9VU9DvNoHDWlmecmcsE5ZZiUkYx+nKBzum4Oxe1K0yJVyBlfbq7H3eXjxXqJczBKqPGq3EgfTru4MgKb9+Yw==}
     dependencies:
-      '@types/react': 18.0.5
+      '@types/react': 17.0.44
     dev: true
 
-  /@types/react/18.0.5:
-    resolution: {integrity: sha512-UPxNGInDCIKlfqBrm8LDXYWNfLHwIdisWcsH5GpMyGjhEDLFgTtlRBaoWuCua9HcyuE0rMkmAeZ3FXV1pYLIYQ==}
+  /@types/react/17.0.44:
+    resolution: {integrity: sha512-Ye0nlw09GeMp2Suh8qoOv0odfgCoowfM/9MG6WeRD60Gq9wS90bdkdRtYbRkNhXOpG4H+YXGvj4wOWhAC0LJ1g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
