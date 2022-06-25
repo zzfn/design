@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-const BackTop: React.FC = ({ children }) => {
+type BackTopType = {
+  children: React.ReactNode;
+};
+const BackTop: React.FC<BackTopType> = ({ children }) => {
   const [isShow, setIsShow] = useState(false)
 
   function handleIsShow () {
@@ -18,15 +21,18 @@ const BackTop: React.FC = ({ children }) => {
     }
   }, [])
   return (
-        <>
-            {
-                isShow && <div onClick={() => {
-                  scrollTo({ top: 0 })
-                }} className={'zzf-back-top'}>
-                    {children}
-                </div>
-            }
-        </>
+    <>
+      {isShow && (
+        <div
+          onClick={() => {
+            scrollTo({ top: 0 })
+          }}
+          className={'zzf-back-top'}
+        >
+          {children}
+        </div>
+      )}
+    </>
   )
 }
 

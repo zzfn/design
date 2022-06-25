@@ -1,1 +1,1 @@
-import './svg-icon.scss'
+import './svg-icon.scss';

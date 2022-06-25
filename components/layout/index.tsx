@@ -7,11 +7,12 @@ import Basic, { BasicProps } from './Basic'
 import React from 'react'
 
 interface LayoutType extends React.FC<BasicProps> {
-    Header: typeof Header;
-    Footer: typeof Footer;
-    Content: typeof Content;
-    Main: typeof Main;
-    Sidebar: typeof Sidebar;
+  children: React.ReactNode;
+  Header: typeof Header;
+  Footer: typeof Footer;
+  Content: typeof Content;
+  Main: typeof Main;
+  Sidebar: typeof Sidebar;
 }
 
 const Layout = Basic as LayoutType

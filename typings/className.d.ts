@@ -1,3 +1,3 @@
 interface classNameProps {
-    className?:string
+  className?: string;
 }

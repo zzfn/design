@@ -1,5 +1,3 @@
-
-
 <h1 align="center">ZZF Design</h1>
 
 <div align="center">
@@ -10,7 +8,7 @@
 
 ## ✨ 特性
 
-- 🌈 github风格。
+- 🌈 github 风格。
 - 📦 支持深色浅色模式。
 - 🛡 使用 TypeScript 开发，提供完整的类型定义文件。
 
@@ -18,7 +16,6 @@
 
 - 服务端渲染。
 - 目前只测试过`chrome`
-
 
 ## 📦 安装
 

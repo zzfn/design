@@ -1,1 +1,1 @@
-import './loading.scss'
+import './loading.scss';

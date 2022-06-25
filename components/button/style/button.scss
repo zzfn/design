@@ -9,18 +9,18 @@
   white-space: nowrap;
   color: var(--color-text-info);
   background-color: var(--color-bg-tertiary);
-  transition: .2s cubic-bezier(.3,0,.5,1);
-  transition-property: color,background-color,border-color;
-  &:hover{
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+  &:hover {
     background-color: var(--color-bg-decorative);
     color: var(--color-text-primary);
-    opacity: .8;
-    transition-duration: .1s;
+    opacity: 0.8;
+    transition-duration: 0.1s;
   }
-  &:active{
+  &:active {
     background-color: var(--color-bg-decorative);
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
 }

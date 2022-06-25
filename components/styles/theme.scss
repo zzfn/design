@@ -6,7 +6,7 @@
   --color-bg-primary: hsl(0deg, 0%, 100%);
   --color-bg-secondary: hsl(225deg, 25%, 95%);
   --color-bg-tertiary: hsla(210deg, 55%, 92%, 0.85);
-  --color-bg-decorative: hsla(200, 72%, 80%,0.35);
+  --color-bg-decorative: hsla(200, 72%, 80%, 0.35);
   --color-bg-syntax: hsl(225deg, 25%, 97%);
   --color-bg-muted: hsla(210deg, 55%, 92%, 0.85);
   --color-gray-100: hsl(225deg, 25%, 95%);
@@ -20,7 +20,6 @@
   --color-gray-1000: hsl(225deg, 15%, 15%);
 }
 
-
 @mixin colors-dark {
   --color-text-info: hsl(0deg, 0%, 100%);
   --color-text-primary: hsl(230deg, 100%, 67%);
@@ -29,7 +28,7 @@
   --color-bg-primary: hsl(210deg, 30%, 8%);
   --color-bg-secondary: hsl(210deg, 22%, 15%);
   --color-bg-tertiary: hsla(210deg, 38%, 15%, 0.85);
-  --color-bg-decorative: hsla(200deg, 50%, 60%,0.35);
+  --color-bg-decorative: hsla(200deg, 50%, 60%, 0.35);
   --color-bg-syntax: hsl(210deg, 30%, 12%);
   --color-bg-muted: hsla(210deg, 38%, 15%, 0.85);
   --color-gray-100: hsl(210deg, 15%, 20%);

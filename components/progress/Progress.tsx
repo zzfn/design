@@ -17,9 +17,7 @@ const Progress: React.FC = () => {
       document.removeEventListener('scroll', watch)
     }
   }, [])
-  return (
-        <progress className={'zzf-progress'} max={max} value={value}/>
-  )
+  return <progress className={'zzf-progress'} max={max} value={value} />
 }
 
 export default Progress

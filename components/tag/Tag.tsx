@@ -1,8 +1,10 @@
 import React from 'react'
-const Tag: React.FC = ({ children }) => {
-  return (
-        <span className={'zzf-tag'}>{children}</span>
-  )
+
+type TagType = {
+  children: React.ReactNode;
+};
+const Tag: React.FC<TagType> = ({ children }) => {
+  return <span className={'zzf-tag'}>{children}</span>
 }
 
 export default Tag

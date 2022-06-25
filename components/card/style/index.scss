@@ -1,13 +1,13 @@
 .zzf-card {
   padding: 10px;
   border-radius: 6px;
-  &-header{
-    display:flex;
+  &-header {
+    display: flex;
     color: var(--color-text-info);
     align-items: center;
     font-size: 16px;
     margin-bottom: 20px;
-    &-text{
+    &-text {
       color: var(--color-text-secondary);
     }
   }

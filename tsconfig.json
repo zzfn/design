@@ -15,30 +15,15 @@
     "moduleResolution": "node",
     "baseUrl": "./components",
     "paths": {
-      "components": [
-        "components/*"
-      ]
+      "components": ["components/*"]
     },
-    "typeRoots": [
-      "./node_modules/@types/",
-      "./typings"
-    ],
-    "types": [
-      "node",
-    ],
+    "typeRoots": ["./node_modules/@types/", "./typings"],
+    "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "components/**/*",
-    "typings/**/*"
-  ],
-  "exclude": [
-    "test",
-    "node_modules",
-    "components/styles/*",
-    "components/**/style/*"
-  ]
+  "include": ["components/**/*", "typings/**/*"],
+  "exclude": ["test", "node_modules", "components/styles/*", "components/**/style/*"]
 }
