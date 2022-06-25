@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.2](https://github.com/zzfn/design/compare/v0.0.1-alpha.1...v0.0.1-alpha.2) (2022-06-25)
+
+
+### Bug Fixes
+
+* up react 18 ([f0f855f](https://github.com/zzfn/design/commit/f0f855fc5b1c1251bea0a73dc115374e4360ba1a))
+* up react 18 ([e96f706](https://github.com/zzfn/design/commit/e96f70611c699905e98ca97dc76c58984af73b3b))
+
 ### [0.0.1-alpha.1](https://github.com/zzfn/design/compare/v0.0.1-alpha.0...v0.0.1-alpha.1) (2022-06-25)
 
 ### 0.0.1-alpha.0 (2022-04-20)
