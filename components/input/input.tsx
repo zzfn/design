@@ -2,7 +2,6 @@ import React from 'react'
 import classNames from 'classnames'
 
 interface InputType {
-  children: React.ReactNode;
   className?: string;
   type?: string;
   autoFocus?: boolean;
