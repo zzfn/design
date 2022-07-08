@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.8](https://github.com/zzfn/design/compare/v0.0.1-alpha.7...v0.0.1-alpha.8) (2022-07-08)
+
+
+### Features
+
+* color ([f923be7](https://github.com/zzfn/design/commit/f923be7a7f0d3693dd067ff7bd1e2b86199801a1))
+
 ### [0.0.1-alpha.7](https://github.com/zzfn/design/compare/v0.0.1-alpha.6...v0.0.1-alpha.7) (2022-07-08)
 
 ### 0.0.1-alpha.6 (2022-07-08)
