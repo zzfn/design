@@ -7,7 +7,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ children, className }) => {
   return (
     <footer className={'zzf-layout-footer'}>
-      <section className={classNames('zzf-box-responsive-main', className)}>{children}</section>
+      <section className={classNames('zzf-layout-footer-content', className)}>{children}</section>
     </footer>
   )
 }

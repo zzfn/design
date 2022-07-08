@@ -6,9 +6,9 @@ interface ContentProps {
 }
 const Content: React.FC<ContentProps> = ({ children, className }) => {
   return (
-    <main className={classNames('zzf-layout-content', 'zzf-box-responsive-content', className)}>
+    <section className={classNames('zzf-layout-content', className)}>
       {children}
-    </main>
+    </section>
   )
 }
 

@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
   return (
     <header className={'zzf-layout-header'}>
       <section
-        className={classNames('zzf-box-responsive-main', 'zzf-layout-header-content', className)}
+        className={classNames('zzf-layout-header-content', className)}
       >
         {children}
       </section>
