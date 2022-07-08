@@ -10,7 +10,7 @@ export interface BasicProps {
 const Basic: React.FC<BasicProps> = ({ children, direction = 'row', className }) => {
   return (
     <section
-      className={classNames(className, 'zzf-layout zzf-box-responsive', `zzf-layout-${direction}`)}
+      className={classNames(className, 'zzf-layout')}
     >
       {children}
     </section>
