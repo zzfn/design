@@ -1,6 +1,6 @@
 {
   "name": "@zzf/design",
-  "version": "0.0.1-alpha.8",
+  "version": "0.0.1-alpha.9",
   "description": "github风格组件库",
   "main": "dist/index.min.js",
   "module": "dist/index.min.mjs",
