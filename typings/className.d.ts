@@ -1,3 +1,0 @@
-interface classNameProps {
-  className?: string;
-}
