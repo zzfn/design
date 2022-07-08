@@ -17,10 +17,10 @@
   }
 
   &::-webkit-progress-value {
-    background-color: var(--color-text-brand);
+    background-color: var(--color-text-primary);
   }
 
   &::-moz-progress-bar {
-    background-color: var(--color-text-brand);
+    background-color: var(--color-text-primary);
   }
 }

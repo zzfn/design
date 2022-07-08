@@ -1,4 +1,23 @@
 @mixin colors-light {
+  --bg: #f2f5f8;
+  --main: #fff;
+  --t: #37475b;
+  --t-l: #64778b;
+  --logo: #000;
+  --link: #1f6dda;
+  --title: #475c6e;
+  --fab: #fff;
+  --shadow: 0 4px 10px rgba(0,2,4,.06),0 0 1px rgba(0,2,4,.11);
+  --t-s: #2f3d4e;
+  --alt: #e6e8ee;
+  --link-hover: #2674e0;
+  --hover-bg: #eceef2;
+  --tag: #eceef2;
+  --border: #e3e6eb;
+  --c-bg: #f4f5f7;
+  --code: #405363;
+  --radius: .5rem;
+
   --color-text-info: hsl(222deg, 22%, 5%);
   --color-text-primary: hsl(245deg, 100%, 60%);
   --color-text-secondary: hsl(333deg, 100%, 45%);
@@ -21,6 +40,24 @@
 }
 
 @mixin colors-dark {
+  --bg: #181c27;
+  --main: #252d38;
+  --t: hsla(0,0%,100%,.86);
+  --t-l: hsla(0,0%,100%,.66);
+  --logo: #fff;
+  --link: #3298dc;
+  --title: hsla(0,0%,100%,.92);
+  --fab: #364151;
+  --shadow: none;
+  --t-s: hsla(0,0%,100%,.9);
+  --alt: #3e4b5e;
+  --link-hover: #47a2e0;
+  --hover-bg: #3e4b5e;
+  --tag: #3e4b5e;
+  --border: #435266;
+  --c-bg: #2f3947;
+  --code: #c3c7cb;
+
   --color-text-info: hsl(0deg, 0%, 100%);
   --color-text-primary: hsl(230deg, 100%, 67%);
   --color-text-secondary: hsl(333deg, 100%, 52%);
