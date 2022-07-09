@@ -1,0 +1,39 @@
+.zzf-modal-container {
+  height: 50vh;
+  width: 50vw;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-bg-default);
+  padding:10px;
+  border-radius:10px;
+}
+.zzf-modal-header{
+  color: var(--color-text-info);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.zzf-model-close {
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--color-text-info);
+
+  &:hover {
+    color: var(--color-text-hint);
+  }
+}
+
+.zzf-modal-content {
+  padding: 20px;
+}
+
+.btn {
+  position: absolute;
+  padding-bottom: 10px;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  cursor: default;
+}

@@ -13,10 +13,13 @@
   --color-text-tertiary: hsl(255deg, 85%, 30%);
   --color-text-disable: rgba(0, 0, 0, 0.38);
   --color-text-hint: rgba(0, 0, 0, 0.38);
+  --color-text-code: #2c394b;
   --color-text-border: hsl(245deg, 100%, 60%);
 
   --color-bg-primary: #fff;
   --color-bg-default: #f2f5f8;
+  --color-bg-code: #c3c7cb;
+
 }
 
 @mixin colors-dark {
@@ -33,8 +36,10 @@
   --color-text-tertiary: hsl(255deg, 85%, 30%);
   --color-text-disable: rgba(255, 255, 255, 0.5);
   --color-text-hint: rgba(255, 255, 255, 0.5);
+  --color-text-code: #f4f5f7;
   --color-text-border: hsl(245deg, 100%, 60%);
 
   --color-bg-primary: #252d38;
   --color-bg-default: #181c27;
+  --color-bg-code: #405363;
 }
