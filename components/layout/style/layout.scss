@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-default);
 }
 
 .zzf-layout-header {
@@ -15,7 +15,6 @@
 
   .zzf-layout-header-content {
     height: 60px;
-    width: 1024px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -24,23 +23,22 @@
 }
 
 .zzf-layout-content {
-  margin-top: 20px;
-  width: 1024px;
+  padding-top: 20px;
   flex-grow: 1;
   display: grid;
-  grid-template-columns: 25fr 12fr;
+  grid-template-columns: 12fr 25fr;
   column-gap: 22.5px;
+  min-height: calc(100vh - 60px - 100px);
 }
 
 .zzf-layout-footer {
   background-color: var(--color-bg-primary);
   width:100%;
-  min-height: 160px;
+  height: 100px;
   color: var(--color-text-info);
   display: flex;
   justify-content: center;
   .zzf-layout-footer-content{
-    width: 1024px;
     padding: 0 16px;
     margin: auto;
     display: flex;

@@ -11,7 +11,7 @@
     "typings/**/*"
   ],
   "scripts": {
-    "rollup-build": "cross-env NODE_ENV=production rollup -c -w",
+    "dev": "cross-env NODE_ENV=production rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c&&tsc",
     "patch:alpha": "standard-version --prerelease alpha",
     "patch": "standard-version",
