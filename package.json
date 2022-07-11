@@ -1,7 +1,7 @@
 {
   "name": "@zzf/design",
   "version": "0.0.1-alpha.12",
-  "description": "github风格组件库",
+  "description": "个人博客组件库",
   "main": "dist/index.min.js",
   "module": "dist/index.min.mjs",
   "typings": "lib/index.d.ts",
