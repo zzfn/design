@@ -18,7 +18,6 @@
       "components": ["components/*"]
     },
     "typeRoots": ["./node_modules/@types/", "./typings"],
-    "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

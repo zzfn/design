@@ -26,3 +26,13 @@ npm install @zzf/design --save
 ```bash
 yarn add  @zzf/design
 ```
+
+## 本地调试指南
+
+> install
+
+1. `pnpm link --global`
+2. 目标项目执行`pnpm link @zzf/design --global`
+   > uninstall
+3. 目标项目执行`pnpm unlink @zzf/design`
+4. `pnpm remove @zzf/design --global`

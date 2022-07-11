@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Progress: React.FC = () => {
-  const [max, setMax] = useState(0)
-  const [value, setValue] = useState(0)
+  const [max, setMax] = useState(0);
+  const [value, setValue] = useState(0);
 
-  function watch () {
-    const winHeight = window.innerHeight
-    const docHeight = document.documentElement.scrollHeight
-    setMax(docHeight - winHeight)
-    setValue(window.scrollY)
+  function watch() {
+    const winHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+    setMax(docHeight - winHeight);
+    setValue(window.scrollY);
   }
 
   useEffect(() => {
-    document.addEventListener('scroll', watch)
+    document.addEventListener('scroll', watch);
     return () => {
-      document.removeEventListener('scroll', watch)
-    }
-  }, [])
-  return <progress className={'zzf-progress'} max={max} value={value} />
-}
+      document.removeEventListener('scroll', watch);
+    };
+  }, []);
+  return <progress className={'zzf-progress'} max={max} value={value} />;
+};
 
-export default Progress
+export default Progress;

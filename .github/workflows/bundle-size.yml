@@ -15,5 +15,5 @@ jobs:
           version: 6.20.3
       - uses: preactjs/compressed-size-action@v2
         with:
-          pattern: "./dist/**/*.{js,css,mjs,scss}"
+          pattern: './dist/**/*.{js,css,mjs,scss}'
           repo-token: '${{ secrets.GH_TOKEN }}'

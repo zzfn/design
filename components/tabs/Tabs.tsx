@@ -1,5 +1,5 @@
-import React from 'react'
-import TabPane from './TabPane'
+import React from 'react';
+import TabPane from './TabPane';
 
 interface OptionsProps {
   value: string;
@@ -26,6 +26,6 @@ const Tabs: React.FC<TabsProps> = ({ options, onChange, value }) => {
         />
       ))}
     </ul>
-  )
-}
-export default Tabs
+  );
+};
+export default Tabs;

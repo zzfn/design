@@ -8,3 +8,5 @@ import '../loading/style';
 import '../back-top/style';
 import '../card/style';
 import '../svg-icon/style';
+import '../alert/style';
+import '../modal/style';
