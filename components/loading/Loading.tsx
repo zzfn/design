@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 
 interface LoadingProps {
   noMore: boolean;
@@ -8,39 +8,37 @@ interface LoadingProps {
 }
 
 const Loading: React.FC<LoadingProps> = ({ children, loading, noMore, onLoad }) => {
-  const loadingRef = useRef<HTMLDivElement>(null)
-  const Observer = useRef<IntersectionObserver>()
+  const loadingRef = useRef<HTMLDivElement>(null);
+  const Observer = useRef<IntersectionObserver>();
   useEffect(() => {
     Observer.current = new IntersectionObserver(function (entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          onLoad()
+          onLoad();
         }
-      })
-    })
+      });
+    });
     if (loadingRef.current) {
-      Observer.current.observe(loadingRef.current)
+      Observer.current.observe(loadingRef.current);
     }
-  }, [])
+  }, []);
   useEffect(() => {
     if (noMore) {
-      Observer.current?.disconnect()
+      Observer.current?.disconnect();
     }
-  })
+  });
   return (
     <>
       {children}
-      {noMore
-        ? (
+      {noMore ? (
         <section className={'zzf-loading-no-more'}>暂无更多</section>
-          )
-        : (
+      ) : (
         <section ref={loadingRef}>
           <section>{loading}</section>
         </section>
-          )}
+      )}
     </>
-  )
-}
+  );
+};
 
-export default Loading
+export default Loading;

@@ -1,5 +1,5 @@
-import React from 'react'
-import classNames from 'classnames'
+import React from 'react';
+import classNames from 'classnames';
 
 interface SvgIconProps {
   name: string;
@@ -18,7 +18,7 @@ const SvgIcon: React.FC<SvgIconProps> = ({ name, color, size, onClick, className
     >
       <use xlinkHref={`#icon-${name}`} />
     </svg>
-  )
-}
+  );
+};
 
-export default SvgIcon
+export default SvgIcon;

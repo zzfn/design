@@ -1,11 +1,11 @@
-import Footer from './Footer'
-import Content from './Content'
-import Left from './Left'
-import Center from './Center'
-import Right from './Right'
-import Header from './Header'
-import Basic, { BasicProps } from './Basic'
-import React from 'react'
+import Footer from './Footer';
+import Content from './Content';
+import Left from './Left';
+import Center from './Center';
+import Right from './Right';
+import Header from './Header';
+import Basic, { BasicProps } from './Basic';
+import React from 'react';
 
 interface LayoutType extends React.FC<BasicProps> {
   children: React.ReactNode;
@@ -17,13 +17,13 @@ interface LayoutType extends React.FC<BasicProps> {
   Right: typeof Right;
 }
 
-const Layout = Basic as LayoutType
+const Layout = Basic as LayoutType;
 
-Layout.Header = Header
-Layout.Footer = Footer
-Layout.Content = Content
-Layout.Left = Left
-Layout.Center = Center
-Layout.Right = Right
+Layout.Header = Header;
+Layout.Footer = Footer;
+Layout.Content = Content;
+Layout.Left = Left;
+Layout.Center = Center;
+Layout.Right = Right;
 
-export { Layout }
+export { Layout };

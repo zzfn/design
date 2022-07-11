@@ -1,5 +1,5 @@
-import React from 'react'
-import classNames from 'classnames'
+import React from 'react';
+import classNames from 'classnames';
 
 export interface BasicProps {
   direction?: 'row' | 'column';
@@ -8,13 +8,7 @@ export interface BasicProps {
 }
 
 const Basic: React.FC<BasicProps> = ({ children, direction = 'row', className }) => {
-  return (
-    <section
-      className={classNames(className, 'zzf-layout')}
-    >
-      {children}
-    </section>
-  )
-}
+  return <section className={classNames(className, 'zzf-layout')}>{children}</section>;
+};
 
-export default Basic
+export default Basic;

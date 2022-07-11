@@ -1,15 +1,11 @@
-import React from 'react'
-import classNames from 'classnames'
+import React from 'react';
+import classNames from 'classnames';
 interface SidebarProps {
   className?: string;
   children: React.ReactNode;
 }
 const Center: React.FC<SidebarProps> = ({ children, className }) => {
-  return (
-    <main className={classNames('zzf-layout-center', className)}>
-      {children}
-    </main>
-  )
-}
+  return <main className={classNames('zzf-layout-center', className)}>{children}</main>;
+};
 
-export default Center
+export default Center;

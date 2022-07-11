@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react'
-import classNames from 'classnames'
+import React, { ReactNode } from 'react';
+import classNames from 'classnames';
 
 interface CardProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({ children, title, className }) => {
       </header>
       {children}
     </section>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
