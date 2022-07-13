@@ -28,8 +28,8 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
       <header className={'header'}>
         <div>个人博客组件库</div>
         <div>
-          <a target='_blank' href="https://npm.zzfzzf.com/-/web/detail/@zzf/design">npm</a>
-          <a target='_blank' href="https://github.com/zzfn/design">github</a>
+          <a rel="noreferrer" target='_blank' href="https://npm.zzfzzf.com/-/web/detail/@zzf/design">npm</a>
+          <a rel="noreferrer" target='_blank' href="https://github.com/zzfn/design">github</a>
           <Button onClick={() => setTheme('light')}>浅色</Button>
           <Button onClick={() => setTheme('dark')}>深色</Button>
         </div>
