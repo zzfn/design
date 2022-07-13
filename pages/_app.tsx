@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import {Button} from "../components";
-
+const pkg =require('../package.json')
 const menu = ['alert', 'button'];
 
 function App({ Component, pageProps }: AppProps): JSX.Element {
@@ -29,6 +29,9 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
         <div>个人博客组件库</div>
         <div>
           <a rel="noreferrer" target='_blank' href="https://npm.zzfzzf.com/-/web/detail/@zzf/design">npm</a>
+          ·
+          {pkg.version}
+          ·
           <a rel="noreferrer" target='_blank' href="https://github.com/zzfn/design">github</a>
           <Button onClick={() => setTheme('light')}>浅色</Button>
           <Button onClick={() => setTheme('dark')}>深色</Button>

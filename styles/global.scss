@@ -51,7 +51,7 @@
   min-height: 300px;
   border-radius: 3px;
   border: 1px solid #ccc;
-  background: #fff;
+  background: var(--color-bg-primary);
   .preview{
     padding:20px;
     border-right: 1px solid #ccc;
