@@ -1,13 +1,11 @@
-const withMDX = require('@next/mdx')({
+import mdx from '@next/mdx'
+const withMDX = mdx({
     extension: /\.mdx?$/,
     options: {
         remarkPlugins: [],
         rehypePlugins: [],
-        // If you use `MDXProvider`, uncomment the following line.
-        // providerImportSource: "@mdx-js/react",
     },
 })
-module.exports = withMDX({
-    // Append the default value with md extensions
+export default  withMDX({
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 })
