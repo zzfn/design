@@ -1,0 +1,62 @@
+@import '../dist/theme';
+
+:root,
+[data-color-mode='light'] {
+  @include colors-light;
+}
+
+[data-color-mode='dark'] {
+  @include colors-dark;
+}
+
+.header {
+  height: 60px;
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+
+  .nav {
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+
+    .nav-item {
+      height: 40px;
+      line-height: 40px;
+      text-align: right;
+      padding: 0 15px;
+      cursor: pointer;
+      color: var(--color-text-primary);
+    }
+
+    .active {
+      background-color: var(--color-bg-default);
+    }
+  }
+  .content{
+    background-color: var(--color-bg-default);
+    padding: 20px;
+  }
+}
+
+.live-editor{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 300px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: #fff;
+  .preview{
+    padding:20px;
+    border-right: 1px solid #ccc;
+  }
+  .code{
+    background-color: var(--color-bg-default);
+  }
+}

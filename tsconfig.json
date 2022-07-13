@@ -3,7 +3,7 @@
     "target": "ES2015",
     "module": "esnext",
     "allowJs": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "declaration": true,
     "declarationDir": "lib",
     "outDir": "lib",
@@ -15,14 +15,36 @@
     "moduleResolution": "node",
     "baseUrl": "./components",
     "paths": {
-      "components": ["components/*"]
+      "components": [
+        "components/*"
+      ]
     },
-    "typeRoots": ["./node_modules/@types/", "./typings"],
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./typings"
+    ],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
-  "include": ["components/**/*", "typings/**/*"],
-  "exclude": ["test", "node_modules", "components/styles/*", "components/**/style/*"]
+  "include": [
+    "components/**/*",
+    "typings/**/*"
+  ],
+  "exclude": [
+    "test",
+    "node_modules",
+    "components/styles/*",
+    "components/**/style/*"
+  ]
 }

@@ -1,0 +1,16 @@
+import { Alert } from '../components'
+import Playground from './Playground'
+
+
+<Playground scope={{Alert}} code={`
+() => {
+  return (
+    <>
+      <Alert type='info'>info</Alert>
+      <Alert type='success'>success</Alert>
+      <Alert type='waring'>waring</Alert>
+      <Alert type='error'>error</Alert>
+    </>
+  );
+};
+`}/>
