@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.16](https://github.com/zzfn/design/compare/v0.0.1-alpha.15...v0.0.1-alpha.16) (2022-07-14)
+
+
+### Bug Fixes
+
+* doc ([96ca222](https://github.com/zzfn/design/commit/96ca2223080756a397c1d562c4a43a37c5a40ef4))
+
 ### [0.0.1-alpha.15](https://github.com/zzfn/design/compare/v0.0.1-alpha.14...v0.0.1-alpha.15) (2022-07-14)
 
 
