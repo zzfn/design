@@ -31,7 +31,7 @@ export default [
             }),
             nodeResolve(),
             commonjs(),
-            typescript(),
+            typescript({}),
         ],
     },
     {
