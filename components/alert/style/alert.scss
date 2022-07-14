@@ -3,20 +3,19 @@
   padding: 8px 15px;
   border-radius: var(--border-radius-small);
   &-info {
-    color: var(--color-text-0);
-    background-color: var(--color-info);
-    border: 1px solid var(--color-info-hover);
+    color: var(--color-info);
+    background-color: var(--color-info-light-default);
   }
   &-success {
-    background-color: var(--color-success);
-    border: 1px solid var(--color-success-hover);
+    background-color: var(--color-success-light-default);
+    color: var(--color-success);
   }
   &-warning {
-    background-color: var(--color-warning);
-    border: 1px solid var(--color-warning-hover);
+    background-color: var(--color-warning-light-default);
+    color: var(--color-warning);
   }
   &-error {
-    background-color: var(--color-danger);
-    border: 1px solid var(--color-danger-hover);
+    background-color: var(--color-danger-light-default);
+    color: var(--color-danger);
   }
 }

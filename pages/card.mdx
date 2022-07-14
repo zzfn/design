@@ -1,11 +1,18 @@
 import { Card,Space } from '../components'
 import Playground from './Playground'
 
-## 大小
+## 有标题
 
 <Playground scope={{Card,Space}} code={`
-<Space>
-<Card>12321</Card>
+<>
+<Card title='普通卡片'>12321</Card>
+</>
+`}/>
+
+## 没有标题
+
+<Playground scope={{Card,Space}} code={`
+<>
 <Card size="small">12321</Card>
-</Space>
+</>
 `}/>
