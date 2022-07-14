@@ -1,5 +1,5 @@
 import '../styles/reset.css';
-import '../dist/bundle.css';
+import '../dist/bundle.min.css';
 import '../styles/global.scss';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
