@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { Button } from '../components';
 const pkg = require('../package.json');
-const menu = [];
+const menu:string[] = [];
 
 const importFn = require.context('./', false, /\.mdx$/);
 importFn.keys().forEach((key) => {
@@ -17,8 +17,8 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
   const [currentPath, setCurrentPath] = useState('');
   const router = useRouter();
 
-  function setTheme(theme) {
-    document.querySelector('html').setAttribute('data-color-mode', theme);
+  function setTheme(theme: string) {
+    document.querySelector('html')?.setAttribute('data-color-mode', theme);
   }
 
   const jump = (path: string) => () => {
@@ -30,7 +30,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <header className={'header'}>
-        <div>个人博客组件库</div>
+        <div>个人博客组件库{currentPath}</div>
         <div>
           <a
             rel='noreferrer'
