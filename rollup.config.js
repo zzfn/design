@@ -31,9 +31,7 @@ export default [
             }),
             nodeResolve(),
             commonjs(),
-            typescript({
-                tsconfig:'./tsconfig.json'
-            }),
+            typescript(),
         ],
     },
     {
@@ -53,7 +51,6 @@ export default [
             commonjs(),
             typescript(),
             postcss({
-                modules: true,
                 extract: true,
                 plugins: [cssnano()],
             }),
