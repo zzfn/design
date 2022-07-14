@@ -37,6 +37,7 @@ export default [
     {
         input: 'components/styles/index.ts',
         plugins: [
+            nodeResolve(),
             commonjs(),
             typescript(),
             scss({
