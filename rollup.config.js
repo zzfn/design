@@ -2,8 +2,8 @@ import esbuild from 'rollup-plugin-esbuild';
 import typescript from '@rollup/plugin-typescript';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import scss from 'rollup-plugin-scss';
 import copy from 'rollup-plugin-copy';
+import del from 'rollup-plugin-delete'
 import postcss from 'rollup-plugin-postcss';
 import cssnano from 'cssnano';
 
@@ -31,20 +31,30 @@ export default [
             }),
             nodeResolve(),
             commonjs(),
-            typescript(),
+            typescript({
+                tsconfig:'./tsconfig.json'
+            }),
         ],
     },
     {
         input: 'components/styles/index.ts',
+        output: [
+            {
+                format: "esm",
+                name: "map",
+                file: "dist/bundle.min.js",
+            },
+        ],
         plugins: [
-            nodeResolve(),
+            nodeResolve({
+                jsnext: true,
+                browser: true,
+            }),
             commonjs(),
             typescript(),
-            scss({
-                output: 'dist/bundle.css',
-                prefix: '@import "../../styles/response";',
-            }),
             postcss({
+                modules: true,
+                extract: true,
                 plugins: [cssnano()],
             }),
             copy({
@@ -55,6 +65,7 @@ export default [
                     },
                 ],
             }),
+            del({ targets: 'dist/bundle.min.js',verbose: true,  hook: 'closeBundle' }),
         ],
     }
 ]
