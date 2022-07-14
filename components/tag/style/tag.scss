@@ -1,15 +1,30 @@
 $bg: var(--color-bg-decorative);
 .zzf-tag {
   display: inline-block;
-  color: var(--color-gray-1000);
-  background-color: var(--color-bg-decorative);
   font-weight: var(--font-weight-medium);
-  font-size: 12px;
   border-radius: 8px;
-  line-height: 22px;
-  padding: 3px 12px;
-
+  background-color:var(--color-);
+  color: var(--color-primary);
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB,
+  Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 4px 8px;
+  height: 24px;
   &:hover {
     opacity: 0.8;
+  }
+  &-light {
+    background-color: rgba(var(--brand-5), 0.15);
+    color: rgba(var(--brand-8), 1);
+  }
+  &-ghost {
+    background-color: transparent;
+    border: 1px solid rgba(var(--brand-4), 1);
+    color: rgba(var(--brand-5), 1);
+  }
+  &-solid {
+    background-color: rgba(var(--brand-5),1);
+    color: rgba(var(--white),1);
   }
 }

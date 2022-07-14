@@ -32,43 +32,11 @@ export default [
             nodeResolve(),
             commonjs(),
             typescript(),
-            scss({
-                output: 'dist/bundle.css',
-                prefix: '@import "../../styles/response";',
-            }),
-            postcss({
-                plugins: [cssnano()],
-            }),
-            copy({
-                targets: [
-                    {
-                        src: ['components/styles/theme.scss'],
-                        dest: 'dist',
-                    },
-                ],
-            }),
         ],
     },
     {
         input: 'components/styles/index.ts',
-        output: [
-            {
-                file: `dist/index${env === 'production' ? '.min' : ''}.js`,
-                format: 'cjs',
-            },
-            {
-                file: `dist/index${env === 'production' ? '.min' : ''}.mjs`,
-                format: 'esm',
-            },
-        ],
-        // 将模块视为外部模块，不会打包在库中
-        external: ['react', 'react-dom'],
-        // 插件
         plugins: [
-            esbuild({
-                minify: process.env.NODE_ENV === 'production',
-            }),
-            nodeResolve(),
             commonjs(),
             typescript(),
             scss({

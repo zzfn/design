@@ -1,21 +1,22 @@
 .zzf-alert {
-  color: var(--color-text-secondary);
+  color: var(--color-text-0);
   padding: 8px 15px;
-  border-radius: 2px;
+  border-radius: var(--border-radius-small);
   &-info {
-    background-color: var(--color-text-info);
-    border: 1px solid var(--color-text-info);
+    color: var(--color-text-0);
+    background-color: var(--color-info);
+    border: 1px solid var(--color-info-hover);
   }
   &-success {
-    background-color: var(--color-text-success);
-    border: 1px solid var(--color-text-success);
+    background-color: var(--color-success);
+    border: 1px solid var(--color-success-hover);
   }
   &-warning {
-    background-color: var(--color-text-warning);
-    border: 1px solid var(--color-text-warning);
+    background-color: var(--color-warning);
+    border: 1px solid var(--color-warning-hover);
   }
   &-error {
-    background-color: var(--color-text-error);
-    border: 1px solid var(--color-text-error);
+    background-color: var(--color-danger);
+    border: 1px solid var(--color-danger-hover);
   }
 }

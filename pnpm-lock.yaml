@@ -14,6 +14,7 @@ specifiers:
   '@rollup/plugin-typescript': ^8.3.3
   '@types/react': ^18.0.14
   '@types/react-dom': ^18.0.5
+  '@types/webpack-env': ^1.17.0
   '@typescript-eslint/eslint-plugin': ^5.29.0
   '@typescript-eslint/parser': ^5.29.0
   classnames: ^2.3.1
@@ -63,6 +64,7 @@ devDependencies:
   '@rollup/plugin-typescript': 8.3.3_mrkdcqv53wzt2ybukxlrvz47fu
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
+  '@types/webpack-env': 1.17.0
   '@typescript-eslint/eslint-plugin': 5.30.5_6zdoc3rn4mpiddqwhppni2mnnm
   '@typescript-eslint/parser': 5.30.5_4x5o4skxv6sl53vpwefgt23khm
   classnames: 2.3.1
@@ -2097,6 +2099,10 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: true
+
+  /@types/webpack-env/1.17.0:
+    resolution: {integrity: sha512-eHSaNYEyxRA5IAG0Ym/yCyf86niZUIF/TpWKofQI/CVfh5HsMEUyfE2kwFxha4ow0s5g0LfISQxpDKjbRDrizw==}
     dev: true
 
   /@types/which/2.0.1:

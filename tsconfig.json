@@ -23,6 +23,10 @@
       "./node_modules/@types/",
       "./typings"
     ],
+    "types": [
+      "node",
+      "webpack-env"
+    ],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
