@@ -36,6 +36,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": [
     "components/**/*",
