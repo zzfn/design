@@ -49,11 +49,11 @@
 }
 
 .zzf-layout-center {
+  overflow: auto;
   flex-grow: 1;
 }
 
 .zzf-layout-slider {
-  height: 50vh;
   position: sticky;
   top: 80px;
 }
