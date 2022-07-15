@@ -21,7 +21,7 @@ require('esbuild')
     entryPoints: ['components/index.ts', 'components/styles/index.ts'],
     bundle: true,
     outdir: 'dist',
-    format: 'esm',
+    format: 'cjs',
     minify: true,
     watch: process.env.NODE_ENV !== 'production'?{
         onRebuild ( error, result ) {
@@ -37,7 +37,7 @@ require('esbuild')
     ],
   })
   .then(() => {
-      console.log('watching...')
+      console.log('building...')
     handleAssets();
   })
   .catch(() => process.exit(1));
