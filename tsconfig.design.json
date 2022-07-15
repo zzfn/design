@@ -18,7 +18,7 @@
       "components": ["components/*"]
     },
     "typeRoots": ["./node_modules/@types/", "./typings"],
-    "types": ["node", "webpack-env"],
+    "types": ["node", "webpack-env","jest"],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

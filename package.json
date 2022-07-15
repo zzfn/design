@@ -11,8 +11,8 @@
     "typings/**/*"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=production rollup -c -w",
-    "build": "cross-env NODE_ENV=production rollup -c&&tsc --project tsconfig.design.json",
+    "dev": "cross-env NODE_ENV=development node bin/esbuild&&tsc --project tsconfig.design.json",
+    "build": "node bin/esbuild&&tsc --project tsconfig.design.json",
     "patch:alpha": "standard-version --prerelease alpha",
     "patch": "standard-version",
     "minor": "standard-version --release-as minor",
@@ -64,10 +64,12 @@
     "@types/webpack-env": "^1.17.0",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
+    "autoprefixer": "^10.4.7",
     "classnames": "^2.3.1",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.12",
-    "esbuild": "^0.14.47",
+    "esbuild": "^0.14.49",
+    "esbuild-style-plugin": "^1.6.0",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -79,6 +81,9 @@
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
     "next": "^12.2.2",
+    "postcss": "^8.4.14",
+    "postcss-preset-env": "^7.7.2",
+    "postcss-scss": "^4.0.4",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-docgen-typescript": "^2.2.2",
@@ -101,5 +106,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "esbuild-sass-plugin": "^2.2.6"
   }
 }
