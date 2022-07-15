@@ -11,7 +11,7 @@ const Playground = (props: any) => {
     <div className={'live-editor'}>
       <LiveProvider scope={scope} language='jsx' code={code}>
         <LivePreview className={'preview'} />
-        <LiveEditor className={'code'}/>
+        <LiveEditor className={'code'} />
       </LiveProvider>
     </div>
   );

@@ -44,7 +44,7 @@ export default function Content(props: any) {
               取消
             </Button>
             <Button
-                theme={'solid'}
+              theme={'solid'}
               onClick={() => {
                 props.close();
               }}

@@ -12,10 +12,11 @@
   outline: none;
   width: 100%;
   transition: all 0.2s ease-in-out;
-  &:hover{
+  &:hover {
     background-color: var(--color-fill-1);
   }
-  &:focus,&:active {
+  &:focus,
+  &:active {
     border-color: var(--color-focus-border);
   }
 }

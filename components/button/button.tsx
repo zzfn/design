@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ children, theme = 'light', className, onClick }) => {
   return (
-    <button onClick={onClick} className={classNames('zzf-btn',`zzf-btn-${theme}`, className)}>
+    <button onClick={onClick} className={classNames('zzf-btn', `zzf-btn-${theme}`, className)}>
       {children}
     </button>
   );

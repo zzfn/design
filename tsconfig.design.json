@@ -15,36 +15,16 @@
     "moduleResolution": "node",
     "baseUrl": "./components",
     "paths": {
-      "components": [
-        "components/*"
-      ]
+      "components": ["components/*"]
     },
-    "typeRoots": [
-      "./node_modules/@types/",
-      "./typings"
-    ],
-    "types": [
-      "node",
-      "webpack-env"
-    ],
+    "typeRoots": ["./node_modules/@types/", "./typings"],
+    "types": ["node", "webpack-env"],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
-  "include": [
-    "components/**/*",
-    "typings/**/*"
-  ],
-  "exclude": [
-    "test",
-    "node_modules",
-    "components/styles/*",
-    "components/**/style/*"
-  ]
+  "include": ["components/**/*", "typings/**/*"],
+  "exclude": ["test", "node_modules", "components/styles/*", "components/**/style/*"]
 }

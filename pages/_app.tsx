@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { Button } from '../components';
 const pkg = require('../package.json');
-const menu:string[] = [];
+const menu: string[] = [];
 
 const importFn = require.context('./', false, /\.mdx$/);
 importFn.keys().forEach((key) => {

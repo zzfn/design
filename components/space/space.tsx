@@ -8,11 +8,7 @@ interface ButtonProps {
 }
 
 const Space: React.FC<ButtonProps> = ({ children, className, type }) => {
-  return (
-    <div className={classNames('zzf-space')}>
-      {children}
-    </div>
-  );
+  return <div className={classNames('zzf-space')}>{children}</div>;
 };
 
 export default Space;
