@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.19](https://github.com/zzfn/design/compare/v0.0.1-alpha.18...v0.0.1-alpha.19) (2022-07-15)
+
+
+### Bug Fixes
+
+* performance ([05a177e](https://github.com/zzfn/design/commit/05a177e1fae7981d51d78a4dcdc3861780559c52))
+* prettier ([8d38037](https://github.com/zzfn/design/commit/8d38037e9bfc8ccce0d6e51c9b7a8a72e946aa3e))
+* test ([c53275d](https://github.com/zzfn/design/commit/c53275dabb1be5650f6d7daf3b907389a936805d))
+* 改为esbuild ([08fb465](https://github.com/zzfn/design/commit/08fb4656de4b6ac6127694f4223425b926d43b04))
+* 改为esbuild ([7f9d4b8](https://github.com/zzfn/design/commit/7f9d4b880098cdb8aa0468b27915e63be7438b7f))
+
 ### [0.0.1-alpha.18](https://github.com/zzfn/design/compare/v0.0.1-alpha.17...v0.0.1-alpha.18) (2022-07-14)
 
 ### Bug Fixes
