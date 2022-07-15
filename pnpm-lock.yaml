@@ -41,7 +41,6 @@ specifiers:
   next: ^12.2.2
   postcss: ^8.4.14
   postcss-preset-env: ^7.7.2
-  postcss-scss: ^4.0.4
   prettier: ^2.7.1
   react: ^18.2.0
   react-docgen-typescript: ^2.2.2
@@ -104,7 +103,6 @@ devDependencies:
   next: 12.2.2_zazhvxb5wdpfvem7m5mnvhb45a
   postcss: 8.4.14
   postcss-preset-env: 7.7.2_postcss@8.4.14
-  postcss-scss: 4.0.4_postcss@8.4.14
   prettier: 2.7.1
   react: 18.2.0
   react-docgen-typescript: 2.2.2_typescript@4.7.4
@@ -8269,15 +8267,6 @@ packages:
     resolution: {integrity: sha512-KmF7SBPphT4gPPcKZc7aDkweHiKEEO8cla/GjcBK+ckKxiZslIu3C4GCRW3DNfL0o7yW7kMQu9xlZ1kXRXLXtw==}
     peerDependencies:
       postcss: ^8.0.3
-    dependencies:
-      postcss: 8.4.14
-    dev: true
-
-  /postcss-scss/4.0.4_postcss@8.4.14:
-    resolution: {integrity: sha512-aBBbVyzA8b3hUL0MGrpydxxXKXFZc5Eqva0Q3V9qsBOLEMsjb6w49WfpsoWzpEgcqJGW4t7Rio8WXVU9Gd8vWg==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
     dependencies:
       postcss: 8.4.14
     dev: true

@@ -1,7 +1,5 @@
-const fs = require('fs/promises');
 const postcss = require('postcss');
 const path = require('path');
-const autoprefixer = require('autoprefixer');
 module.exports = (options = { plugins: [] }) => ({
   name: 'postcss-with-esbuild',
   setup: function (build) {
