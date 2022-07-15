@@ -2,8 +2,8 @@
   "name": "@zzf/design",
   "version": "0.0.1-alpha.18",
   "description": "个人博客组件库",
-  "main": "dist/index.min.js",
-  "module": "dist/index.min.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "typings": "lib/index.d.ts",
   "files": [
     "lib/**/*",
@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development node bin/esbuild&&tsc --project tsconfig.design.json",
-    "build": "cross-env NODE_ENV=production node bin/esbuild&&tsc --project tsconfig.design.json",
+    "build": "cross-env NODE_ENV=production node bin/esbuild&&node bin/esbuild-esm&&tsc --project tsconfig.design.json",
     "patch:alpha": "standard-version --prerelease alpha",
     "patch": "standard-version",
     "minor": "standard-version --release-as minor",

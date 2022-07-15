@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 
-interface ButtonProps {
+interface AlertProps {
   children: React.ReactNode;
   className?: string;
   type?: 'info' | 'success' | 'warning' | 'error';
 }
 
-const Alert: React.FC<ButtonProps> = ({ children, className, type = 'info' }) => {
+const Alert: React.FC<AlertProps> = ({ children, className, type = 'info' }) => {
   return (
     <div className={classNames('zzf-alert', type && `zzf-alert-${type}`, className)}>
       {children}
