@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Content from './content';
-import useOutsideClick from "../hooks/useOutsideClick";
+import useOutsideClick from '../hooks/useOutsideClick';
 
 const Modal = (props: any) => {
   const [content, setContent] = useState(new Date().toString());
   const [dialogVisible, setDialogVisible] = useState(false);
   const [dialogContent, setDialogContent] = useState<Element | null>(null);
-    const ref = useOutsideClick<HTMLUListElement>(() => setDialogVisible(false));
   useEffect(() => {
     const element = document.createElement('div');
     element.className = 'modal-root';
@@ -22,7 +21,7 @@ const Modal = (props: any) => {
     <div>
       {dialogContent &&
         createPortal(
-          <Content ref={ref}
+          <Content
             title={props.title}
             visible={dialogVisible}
             content={content}

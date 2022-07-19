@@ -1,12 +1,14 @@
 import React from 'react';
 import { Button } from '../button';
-import { Space } from '../space';
+import useOutsideClick from "../hooks/useOutsideClick";
 
 export default function Content(props: any) {
+  const ref = useOutsideClick<HTMLUListElement>(() => props.close());
+
   return (
     props.visible && (
       <div className={'zzf-modal-mask'}>
-        <div className={'zzf-modal-container'}>
+        <div ref={props.visible&&ref} className={'zzf-modal-container'}>
           <header className={'zzf-modal-header'}>
             <div>{props.title}</div>
             <svg
