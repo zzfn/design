@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "rm -rf node_modules packages/**/node_modules",
     "build:doc": "turbo run build",
+    "lint": "turbo run lint",
     "build": "pnpm --filter @zzf/design run build"
   },
   "repository": {
