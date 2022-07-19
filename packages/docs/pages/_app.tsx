@@ -44,7 +44,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
             github
           </a>
           <Button onClick={() => setTheme('light')}>浅色</Button>
-          <Button onClick={() => setTheme('dark')}>深色</Button>
+          <Button theme='solid' onClick={() => setTheme('dark')}>深色</Button>
         </div>
       </header>
       <section className={'container'}>
