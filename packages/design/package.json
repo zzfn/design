@@ -1,6 +1,6 @@
 {
   "name": "@zzf/design",
-  "version": "0.0.1-alpha.24",
+  "version": "0.0.1-alpha.25",
   "description": "个人博客组件库",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
