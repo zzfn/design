@@ -7,7 +7,7 @@
     "build:doc": "turbo run build",
     "lint": "turbo run lint",
     "build": "pnpm --filter @zzf/design run build",
-    "publish:alpha": "pnpm publish --tag alpha --filter @zzf/design",
+    "publish:alpha": "pnpm publish --tag alpha --filter @zzf/design --no-git-checks",
     "publish": "pnpm publish --filter @zzf/design --no-git-checks"
   },
   "repository": {
