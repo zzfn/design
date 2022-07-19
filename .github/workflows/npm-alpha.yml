@@ -9,36 +9,15 @@ on:
       - v*.*.*-alpha.*
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.20.3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install
-      - name: Execute lint
-        run: pnpm run lint
-
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-      - uses: actions/setup-node@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'pnpm'
@@ -46,8 +25,15 @@ jobs:
           always-auth: true
           scope: '@zzf'
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
       - name: Install dependencies
         run: pnpm install
+
+      - name: Execute lint
+        run: pnpm run lint
 
       - name: Build
         run: pnpm --filter @zzf/design run build
