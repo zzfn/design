@@ -112,8 +112,6 @@ importers:
       '@zzf/design': workspace:*
       autoprefixer: ^10.4.7
       classnames: ^2.3.1
-      cross-env: ^7.0.3
-      esbuild: ^0.14.49
       next: ^12.2.2
       postcss: ^8.4.14
       postcss-preset-env: ^7.7.2
@@ -149,8 +147,6 @@ importers:
       '@types/webpack-env': 1.17.0
       autoprefixer: 10.4.7_postcss@8.4.14
       classnames: 2.3.1
-      cross-env: 7.0.3
-      esbuild: 0.14.49
       next: 12.2.2_zazhvxb5wdpfvem7m5mnvhb45a
       postcss: 8.4.14
       postcss-preset-env: 7.7.2_postcss@8.4.14
@@ -164,7 +160,7 @@ importers:
       semantic-release: 19.0.3
       standard-version: 9.5.0
       typescript: 4.7.4
-      webpack: 5.73.0_esbuild@0.14.49
+      webpack: 5.73.0
       zx: 7.0.7
 
 packages:
@@ -1920,7 +1916,7 @@ packages:
     dependencies:
       '@mdx-js/mdx': 2.1.2
       source-map: 0.7.4
-      webpack: 5.73.0_esbuild@0.14.49
+      webpack: 5.73.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -8694,7 +8690,7 @@ packages:
       supports-hyperlinks: 2.2.0
     dev: true
 
-  /terser-webpack-plugin/5.3.3_shvqlx5yrz5w2tdoqc5tjqkre4:
+  /terser-webpack-plugin/5.3.3_webpack@5.73.0:
     resolution: {integrity: sha512-Fx60G5HNYknNTNQnzQ1VePRuu89ZVYWfjRAeT5rITuCY/1b08s49e5kSQwHDirKZWuoKOBRFS98EUUoZ9kLEwQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -8711,12 +8707,11 @@ packages:
         optional: true
     dependencies:
       '@jridgewell/trace-mapping': 0.3.14
-      esbuild: 0.14.49
       jest-worker: 27.5.1
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.14.2
-      webpack: 5.73.0_esbuild@0.14.49
+      webpack: 5.73.0
     dev: true
 
   /terser/5.14.2:
@@ -9312,7 +9307,7 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /webpack/5.73.0_esbuild@0.14.49:
+  /webpack/5.73.0:
     resolution: {integrity: sha512-svjudQRPPa0YiOYa2lM/Gacw0r6PvxptHj4FuEKQ2kX05ZLkjbVc5MnPs6its5j7IZljnIqSVo/OsY2X0IpHGA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -9343,7 +9338,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.1.1
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.3_shvqlx5yrz5w2tdoqc5tjqkre4
+      terser-webpack-plugin: 5.3.3_webpack@5.73.0
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
