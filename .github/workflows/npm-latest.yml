@@ -53,6 +53,6 @@ jobs:
       - name: Build
         run: pnpm --filter @zzf/design run build
 
-      - run: pnpm publish --filter @zzf/design
+      - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

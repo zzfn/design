@@ -4,6 +4,7 @@
       "dependsOn": [
         "^build"
       ]
-    }
+    },
+    "lint": {}
   }
 }
