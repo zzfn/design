@@ -69,6 +69,6 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.2",
-    "@zzf/design": "workspace:*"
+    "@zzf/design": "^0.0.1-alpha.19"
   }
 }
