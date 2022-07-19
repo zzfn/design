@@ -18,9 +18,9 @@ async function handleAssets() {
 }
 require('esbuild')
   .build({
-    entryPoints: ['components/index.ts', 'components/styles/index.ts'],
+    entryPoints: [path.join(__dirname,'../components/index.ts'), path.join(__dirname,'../components/styles/index.ts')],
     bundle: true,
-    outdir: 'dist',
+    outdir: path.join(__dirname,'../dist'),
     format: 'cjs',
     minify: true,
     watch: process.env.NODE_ENV !== 'production'?{
@@ -29,7 +29,7 @@ require('esbuild')
             else  console .log( 'watch build 成功:' , result)
         },
     }:false,
-    external: ['react', 'react-dom', 'classnames'],
+    external: ['react', 'react-dom'],
     plugins: [
       postcssPlugin({
         plugins: [autoprefixer, postcssPresetEnv],

@@ -1,12 +1,12 @@
 import '../styles/reset.css';
-import '../dist/bundle.min.css';
+import '@zzf/design/dist/bundle.min.css';
 import '../styles/global.scss';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { Button } from '../components';
-const pkg = require('../package.json');
+import { Button } from '@zzf/design';
+const pkg = require('@zzf/design/package.json');
 const menu: string[] = [];
 
 const importFn = require.context('./', false, /\.mdx$/);

@@ -3,7 +3,7 @@
     "target": "ES2015",
     "module": "esnext",
     "allowJs": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "declaration": true,
     "declarationDir": "lib",
     "outDir": "lib",
@@ -13,7 +13,7 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "baseUrl": "./components",
+    "baseUrl": ".",
     "paths": {
       "components": ["components/*"]
     },
@@ -25,6 +25,10 @@
     "forceConsistentCasingInFileNames": true,
     "lib": ["dom", "dom.iterable", "esnext"]
   },
-  "include": ["components/**/*", "typings/**/*"],
-  "exclude": ["test", "node_modules", "components/styles/*", "components/**/style/*"]
+  "include": [
+    "components/**/*", "typings/**/*"],
+  "exclude": ["test", "node_modules",
+    "components/styles/*",
+    "components/**/style/*"
+  ]
 }

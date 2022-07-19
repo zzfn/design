@@ -13,7 +13,7 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "baseUrl": "./components",
+    "baseUrl": "../design/components",
     "paths": {
       "components": ["components/*"]
     },
@@ -29,6 +29,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["components/**/*", "typings/**/*"],
-  "exclude": ["test", "node_modules", "components/styles/*", "components/**/style/*"]
+  "include": [
+    "packages/design/components/**/*", "typings/**/*"],
+  "exclude": ["test",
+    "../../node_modules",
+    "packages/design/components/styles/*",
+    "packages/design/components/**/style/*"
+  ]
 }

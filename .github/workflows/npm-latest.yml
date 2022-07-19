@@ -48,11 +48,11 @@ jobs:
           scope: '@zzf'
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm --filter @zzf/design run build
 
       - name: Build
-        run: pnpm run build
+        run: pnpm --filter @zzf/design run build
 
-      - run: npm publish
+      - run: pnpm publish --filter @zzf/design
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

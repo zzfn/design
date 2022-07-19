@@ -1,0 +1,74 @@
+{
+  "name": "@zzf/docs",
+  "version": "0.0.0",
+  "description": "个人博客组件库文档",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "dist/**/*",
+    "typings/**/*"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzfn/design.git"
+  },
+  "keywords": [
+    "github",
+    "ui"
+  ],
+  "author": "zzfn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzfn/design/issues"
+  },
+  "homepage": "https://github.com/zzfn/design#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@mdx-js/loader": "^2.1.2",
+    "@next/mdx": "^12.2.2",
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.5",
+    "@types/node": "^18.0.4",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/webpack-env": "^1.17.0",
+    "autoprefixer": "^10.4.7",
+    "classnames": "^2.3.1",
+    "next": "^12.2.2",
+    "postcss": "^8.4.14",
+    "postcss-preset-env": "^7.7.2",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-docgen-typescript": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-live": "^2.4.1",
+    "react-test-renderer": "^18.2.0",
+    "sass": "^1.53.0",
+    "semantic-release": "^19.0.3",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "zx": "^7.0.7"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.1.2",
+    "@zzf/design": "workspace:*"
+  }
+}
