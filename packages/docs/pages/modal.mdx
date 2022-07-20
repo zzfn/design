@@ -6,7 +6,7 @@ import Playground from './Playground';
 <Playground
   scope={{ Modal, Button }}
   code={`
-<Modal title='基本信息框' toggled={<Button>点击回复</Button>}>
+<Modal onCancel={()=>alert('cancel')} onConfirm={()=>alert('confirm')} title='基本信息框' toggled={<Button>点击回复</Button>}>
 This is the content of a basic modal.
 More content...
 </Modal>

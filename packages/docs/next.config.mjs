@@ -7,6 +7,6 @@ const withMDX = mdx({
   },
 });
 export default withMDX({
-  assetPrefix: 'https://oss-zzf.zzfzzf.com/design',
+  assetPrefix: process.env.assetPrefix,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 });

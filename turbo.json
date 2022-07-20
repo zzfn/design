@@ -5,6 +5,11 @@
         "^build"
       ]
     },
+    "dev": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
     "lint": {}
   }
 }

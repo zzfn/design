@@ -40,7 +40,7 @@ export default function Content(props: any) {
           <footer className={'zzf-modal-footer'}>
             <Button
               onClick={() => {
-                props.onConfirm && props.onConfirm();
+                props.onCancel();
                 props.close();
               }}
             >
@@ -49,7 +49,7 @@ export default function Content(props: any) {
             <Button
               theme={'solid'}
               onClick={() => {
-                props.onCancel && props.onCancel();
+                props.onConfirm();
                 props.close();
               }}
             >
