@@ -11,7 +11,7 @@
     "typings/**/*"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node bin/esbuild-esm&&node bin/esbuild&&tsc",
+    "dev": "cross-env NODE_ENV=development node bin/esbuild-esm&&tsc",
     "build": "cross-env NODE_ENV=production node bin/esbuild&&node bin/esbuild-esm&&tsc",
     "patch:alpha": "standard-version --prerelease alpha",
     "patch": "standard-version",

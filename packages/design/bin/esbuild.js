@@ -16,19 +16,27 @@ async function handleAssets() {
   await fs.rm(path.join(__dirname, '../dist/styles/index.js'));
   await fs.rmdir(path.join(__dirname, '../dist/styles'));
 }
+
+console.log(process.env.NODE_ENV)
 require('esbuild')
   .build({
-    entryPoints: [path.join(__dirname,'../components/index.ts'), path.join(__dirname,'../components/styles/index.ts')],
+    entryPoints: [
+      path.join(__dirname, '../components/index.ts'),
+      path.join(__dirname, '../components/styles/index.ts'),
+    ],
     bundle: true,
-    outdir: path.join(__dirname,'../dist'),
+    outdir: path.join(__dirname, '../dist'),
     format: 'cjs',
     minify: true,
-    watch: process.env.NODE_ENV !== 'production'?{
-        onRebuild ( error, result ) {
-            if (error) console .error( 'watch build failed:' , error)
-            else  console .log( 'watch build 成功:' , result)
-        },
-    }:false,
+    watch:
+        process.env.NODE_ENV === 'development'
+        ? {
+            onRebuild(error, result) {
+              if (error) console.error('watch build failed:', error);
+              else console.log('watch build 成功:', result);
+            },
+          }
+        : false,
     external: ['react', 'react-dom'],
     plugins: [
       postcssPlugin({
@@ -37,7 +45,7 @@ require('esbuild')
     ],
   })
   .then(() => {
-      console.log('building...')
+    console.log('building...');
     handleAssets();
   })
   .catch(() => process.exit(1));
