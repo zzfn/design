@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Content from './content';
-import useOutsideClick from '../hooks/useOutsideClick';
 
-const Modal = (props: any) => {
+type ModalType = {
+  title?: string;
+  children?: ReactNode;
+  toggled?: ReactNode;
+};
+const Modal = (props: ModalType) => {
   const [content, setContent] = useState(new Date().toString());
   const [dialogVisible, setDialogVisible] = useState(false);
   const [dialogContent, setDialogContent] = useState<Element | null>(null);
