@@ -6,6 +6,7 @@ type ModalType = {
   title?: string;
   children?: ReactNode;
   toggled?: ReactNode;
+  onConfirm?: () => void;
 };
 const Modal = (props: ModalType) => {
   const [content, setContent] = useState(new Date().toString());
@@ -26,6 +27,7 @@ const Modal = (props: ModalType) => {
       {dialogContent &&
         createPortal(
           <Content
+            onConfirm={props.onConfirm}
             title={props.title}
             visible={dialogVisible}
             content={content}
