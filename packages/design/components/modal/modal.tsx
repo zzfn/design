@@ -1,55 +1,60 @@
 import React, { ReactNode, useEffect, useState } from 'react';
-import { createPortal } from 'react-dom';
-import Content from './content';
+import Portal from '../common/Portal';
+import { Button } from '../button';
+import useOutsideClick from '../hooks/useOutsideClick';
+import classNames from 'classnames';
 
 type ModalType = {
   title?: string;
   children?: ReactNode;
-  toggled?: ReactNode;
+  visible?: boolean;
   onConfirm?: () => void;
   onCancel?: () => void;
 };
 const Modal = (props: ModalType) => {
-  const [content, setContent] = useState(new Date().toString());
-  const [dialogVisible, setDialogVisible] = useState(false);
-  const [dialogContent, setDialogContent] = useState<Element | null>(null);
-  useEffect(() => {
-    const element = document.createElement('div');
-    element.className = 'modal-root';
-    document.body.appendChild(element);
-    setDialogContent(element);
-    return () => {
-      document.body.removeChild(element);
-    };
-  }, []);
+  const { title, children, visible, onConfirm, onCancel } = props;
+  const [show, setShow] = useState(visible);
+  const ref = useOutsideClick<HTMLDivElement>(() => {});
 
   return (
-    <div>
-      {dialogContent &&
-        createPortal(
-          <Content
-            onCancel={props.onCancel}
-            onConfirm={props.onConfirm}
-            title={props.title}
-            visible={dialogVisible}
-            content={content}
-            close={() => {
-              setDialogVisible(false);
-            }}
-          >
-            {props.children}
-          </Content>,
-          dialogContent,
-        )}
-      <div
-        onClick={() => {
-          setContent(new Date().toString());
-          setDialogVisible(true);
-        }}
-      >
-        {props.toggled}
+    visible&&<Portal id='modal'>
+      <div className={classNames('zzf-modal-mask', show && 'zzf-modal-show')}>
+        <div ref={ref} className={'zzf-modal-container'}>
+          <header className={'zzf-modal-header'}>
+            <div>{title}</div>
+            <svg
+              onClick={() => setShow(false)}
+              className={'zzf-model-close'}
+              width='1em'
+              height='1em'
+              viewBox='0 0 48 48'
+              fill='currentColor'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M8 8L40 40'
+                stroke='currentColor'
+                strokeWidth='4'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+              <path
+                d='M8 40L40 8'
+                stroke='currentColor'
+                strokeWidth='4'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+            </svg>
+          </header>
+          <div>{children}</div>
+          <footer className={'zzf-modal-footer'}>
+            <Button>取消</Button>
+            <Button theme={'solid'}>确定</Button>
+          </footer>
+        </div>
       </div>
-    </div>
+    </Portal>
   );
 };
 

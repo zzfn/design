@@ -10,6 +10,7 @@ const Playground = (props: any) => {
   return (
     <div className={'live-editor'}>
       <LiveProvider scope={scope} language='jsx' code={code}>
+        <LiveError/>
         <LivePreview className={'preview'} />
         <LiveEditor className={'code'} />
       </LiveProvider>

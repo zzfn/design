@@ -7,6 +7,10 @@
   background-color: var(--color-overlay-bg);
   height: 100%;
   z-index: 1000;
+  display: none;
+}
+.zzf-modal-show{
+  display: block;
 }
 .zzf-modal-container {
   background: var(--color-bg-2);
