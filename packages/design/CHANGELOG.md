@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.42](https://github.com/zzfn/design/compare/v0.0.1-alpha.41...v0.0.1-alpha.42) (2022-07-20)
+
+
+### Features
+
+* modal type ([dbcc816](https://github.com/zzfn/design/commit/dbcc816206284b75ead07e3d97655930d398bee9))
+
 ### 0.0.1-alpha.41 (2022-07-20)
 
 
