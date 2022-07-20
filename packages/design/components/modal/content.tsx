@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../button';
-import useOutsideClick from "../hooks/useOutsideClick";
+import useOutsideClick from '../hooks/useOutsideClick';
 
 export default function Content(props: any) {
   const ref = useOutsideClick<HTMLUListElement>(() => props.close());
@@ -8,7 +8,7 @@ export default function Content(props: any) {
   return (
     props.visible && (
       <div className={'zzf-modal-mask'}>
-        <div ref={props.visible&&ref} className={'zzf-modal-container'}>
+        <div ref={props.visible && ref} className={'zzf-modal-container'}>
           <header className={'zzf-modal-header'}>
             <div>{props.title}</div>
             <svg
@@ -40,7 +40,7 @@ export default function Content(props: any) {
           <footer className={'zzf-modal-footer'}>
             <Button
               onClick={() => {
-                props.onConfirm()
+                props.onConfirm && props.onConfirm();
                 props.close();
               }}
             >
@@ -49,7 +49,7 @@ export default function Content(props: any) {
             <Button
               theme={'solid'}
               onClick={() => {
-                props.onCancel()
+                props.onCancel && props.onCancel();
                 props.close();
               }}
             >
