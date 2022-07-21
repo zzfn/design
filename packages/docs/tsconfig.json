@@ -15,23 +15,39 @@
     "moduleResolution": "node",
     "baseUrl": "../design/components",
     "paths": {
-      "components": ["components/*"]
+      "components": [
+        "components/*"
+      ]
     },
-    "typeRoots": ["./node_modules/@types/", "./typings"],
-    "types": ["node", "webpack-env", "jest"],
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./typings"
+    ],
+    "types": [
+      "node",
+      "webpack-env",
+      "jest"
+    ],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true,
     "isolatedModules": true
   },
   "include": [
-    "packages/design/components/**/*", "typings/**/*"],
-  "exclude": ["test",
+    "packages/design/components/**/*",
+    "typings/**/*"
+  ],
+  "exclude": [
+    "test",
     "../../node_modules",
     "packages/design/components/styles/*",
     "packages/design/components/**/style/*"

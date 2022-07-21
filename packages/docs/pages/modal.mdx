@@ -13,7 +13,7 @@ import Playground from './Playground';
       <Button onClick={() => setVisible(true)}>
         打开 Modal
       </Button>
-      <Modal visible={visible} title="基本信息框">
+      <Modal onCancel={() => setVisible(false)} visible={visible} title="基本信息框">
         This is the content of a basic modal. More content...
       </Modal>
     </>
