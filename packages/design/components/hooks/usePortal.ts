@@ -1,33 +1,32 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
-function createRootElement(id: string):HTMLElement {
+function createRootElement(id: string): HTMLElement {
   const rootContainer = document.createElement('div');
   rootContainer.setAttribute('id', id);
   return rootContainer;
 }
 
-
-function addRootElement(rootElem: HTMLElement):void {
+function addRootElement(rootElem: HTMLElement): void {
   document.body.insertBefore(rootElem, document.body.lastElementChild!.nextElementSibling);
 }
 
-
 function usePortal(id: string): HTMLElement | null {
-  let rootElemRef = useRef<HTMLElement|null>(null);
-
+  let rootElemRef = useRef<HTMLElement | null>(null);
   useEffect(() => {
     const existingParent = document.querySelector(`#${id}`);
-    // Parent is either a new root or the existing dom element
     const parentElem = existingParent || createRootElement(id);
-
     if (!existingParent) {
       addRootElement(parentElem as HTMLElement);
     }
-
-    parentElem.appendChild(rootElemRef.current as Node);
+    if (!rootElemRef.current) {
+      rootElemRef.current = document.createElement('div');
+    }
+    if (parentElem&&rootElemRef.current) {
+      parentElem.appendChild(rootElemRef.current as Node);
+    }
 
     return () => {
-      if(rootElemRef.current){
+      if (rootElemRef.current) {
         rootElemRef.current.remove();
       }
       if (!parentElem.childElementCount) {
@@ -36,14 +35,7 @@ function usePortal(id: string): HTMLElement | null {
     };
   }, [id]);
 
-  function getRootElem() {
-    if (!rootElemRef.current) {
-      rootElemRef.current = document.createElement('div');
-    }
-    return rootElemRef.current;
-  }
-
-  return getRootElem();
+  return rootElemRef.current || null;
 }
 
 export default usePortal;
