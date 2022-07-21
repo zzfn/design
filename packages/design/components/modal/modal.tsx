@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useState } from 'react';
 import Portal from '../common/Portal';
 import { Button } from '../button';
 import useOutsideClick from '../hooks/useOutsideClick';
-import classNames from 'classnames';
+import classNames from '../utils/classNames';
 
 type ModalType = {
   title?: string;

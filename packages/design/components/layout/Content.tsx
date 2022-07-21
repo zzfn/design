@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classNames from '../utils/classNames';
 interface ContentProps {
   className?: string;
   children: React.ReactNode;

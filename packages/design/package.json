@@ -11,8 +11,8 @@
     "typings/**/*"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node bin/esbuild-esm&&tsc",
-    "build": "cross-env NODE_ENV=production node bin/esbuild-esm&&node bin/esbuild-cjs&&tsc",
+    "dev": "cross-env NODE_ENV=development node bin/esbuild&&tsc",
+    "build": "cross-env NODE_ENV=production node bin/esbuild&&tsc",
     "patch:alpha": "standard-version --prerelease alpha",
     "patch": "standard-version",
     "minor": "standard-version --release-as minor",
@@ -55,7 +55,6 @@
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
     "autoprefixer": "^10.4.7",
-    "classnames": "^2.3.1",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.49",
     "eslint": "^8.18.0",
@@ -83,8 +82,5 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "dependencies": {
-    "esbuild-sass-plugin": "^2.2.6"
   }
 }

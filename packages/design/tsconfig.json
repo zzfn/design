@@ -29,6 +29,7 @@
     "components/**/*", "typings/**/*"],
   "exclude": ["test", "node_modules",
     "components/styles/*",
-    "components/**/style/*"
+    "components/**/style/*",
+    "components/**/__test__/*",
   ]
 }

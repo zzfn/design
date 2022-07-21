@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classNames from '../utils/classNames';
 
 type TagType = {
   children: React.ReactNode;
