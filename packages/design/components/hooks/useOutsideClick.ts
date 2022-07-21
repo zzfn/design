@@ -4,7 +4,6 @@ const useOutsideClick = <T extends HTMLElement>(callback: any) => {
   const ref = useRef<T>(null);
   const handleClick = (event: Event): void => {
     if (ref.current && !ref.current.contains(event.target as Node)) {
-      event.stopPropagation();
       callback(event);
     }
   };
