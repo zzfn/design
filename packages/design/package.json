@@ -23,7 +23,8 @@
     "prettier": "prettier --write .",
     "test": "jest",
     "coverage": "jest --coverage",
-    "updateSnapshot": "jest --updateSnapshot"
+    "updateSnapshot": "jest --updateSnapshot",
+    "plop": "plop"
   },
   "repository": {
     "type": "git",
@@ -67,6 +68,7 @@
     "eslint-plugin-react": "^7.30.1",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
+    "plop": "^3.1.1",
     "postcss": "^8.4.14",
     "postcss-preset-env": "^7.7.2",
     "prettier": "^2.7.1",
