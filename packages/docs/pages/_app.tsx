@@ -6,6 +6,8 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { Button } from '@zzf/design';
+import Moon from "./Moon";
+import Sun from "./Sun";
 const pkg = require('@zzf/design/package.json');
 const menu: string[] = [];
 
@@ -16,9 +18,10 @@ importFn.keys().forEach((key) => {
 function App({ Component, pageProps }: AppProps): JSX.Element {
   const [currentPath, setCurrentPath] = useState('');
   const router = useRouter();
-
-  function setTheme(theme: string) {
+  const [theme,setTheme] = useState('light')
+  function setThemeAction(theme: string) {
     document.querySelector('html')?.setAttribute('data-color-mode', theme);
+    setTheme(theme)
   }
 
   const jump = (path: string) => () => {
@@ -31,7 +34,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
     <>
       <header className={'header'}>
         <div>个人博客组件库{currentPath}</div>
-        <div>
+        <div className='header-right'>
           <a
             rel='noreferrer'
             target='_blank'
@@ -43,8 +46,8 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
           <a rel='noreferrer' target='_blank' href='https://github.com/zzfn/design'>
             github
           </a>
-          <Button onClick={() => setTheme('light')}>浅色</Button>
-          <Button onClick={() => setTheme('dark')}>深色</Button>
+          {theme==='dark'&&<Moon className={'icon'} onClick={()=>setThemeAction('light')}/>}
+          {theme==='light'&&<Sun className={'icon'} onClick={()=>setThemeAction('dark')}/>}
         </div>
       </header>
       <section className={'container'}>

@@ -9,19 +9,28 @@
   @include colors-dark;
 }
 body {
-  color: var(--color-text-0);
-  background-color: var(--color-bg-0);
+  color: var(--color-text-1);
+  background-color: var(--color-bg-1);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
     'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 .header {
+  color: var(--color-text-1);
   height: 60px;
-  background-color: var(--color-bg-primary);
-  color: var(--color-primary);
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &-right{
+    display: flex;
+    align-items: center;
+    .icon{
+      font-size: 22px;
+      cursor: pointer;
+      margin-left:10px;
+    }
+  }
 }
 
 .container {
@@ -30,7 +39,7 @@ body {
 
   .nav {
     min-height: 100vh;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-fill-2);
 
     .nav-item {
       height: 40px;
