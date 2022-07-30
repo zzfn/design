@@ -30,7 +30,7 @@ function buildEsm() {
             bundle: true,
             outdir: path.join(__dirname, '../dist'),
             format: 'esm',
-            minify: true,
+            minify: process.env.NODE_ENV !== 'development',
             watch:
                 process.env.NODE_ENV === 'development'
                     ? {
