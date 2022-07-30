@@ -4,13 +4,23 @@ import classNames from '../utils/classNames';
 interface ButtonProps {
   children: React.ReactNode;
   className?: string;
-  theme?: 'light' | 'solid';
+  type?: 'default' | 'primary';
+  size?: 'default' | 'primary';
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, theme = 'light', className, onClick }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  type = 'secondary',
+  size = 'default',
+  className,
+  onClick,
+}) => {
   return (
-    <button onClick={onClick} className={classNames('zzf-btn', `zzf-btn-${theme}`, className)}>
+    <button
+      onClick={onClick}
+      className={classNames('zzf-btn', `zzf-btn-type-${type}`, `zzf-btn-size-${size}`, className)}
+    >
       {children}
     </button>
   );

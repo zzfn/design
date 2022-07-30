@@ -50,7 +50,7 @@ const Modal = (props: ModalType) => {
           <div>{children}</div>
           <footer className={'zzf-modal-footer'}>
             <Button onClick={onCancel}>取消</Button>
-            <Button onClick={onConfirm} theme={'solid'}>
+            <Button onClick={onConfirm}>
               确定
             </Button>
           </footer>

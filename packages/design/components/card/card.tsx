@@ -15,7 +15,9 @@ const Card: React.FC<CardProps> = ({ children, title, className }) => {
           <span className={'zzf-card-header-text'}>{title}</span>
         </header>
       )}
-      {children}
+      <section className={'zzf-card-body'}>
+        {children}
+      </section>
     </section>
   );
 };

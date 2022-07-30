@@ -1,12 +1,20 @@
 .zzf-tag {
-  display: inline-block;
-  border-radius: 8px;
-  font-size: 12px;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB,
-    Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
-  padding: 0 8px;
+  display: inline-flex;
   height: 24px;
-  line-height: 24px;
+  line-height: 22px;
+  padding: 0 8px;
+  border-radius: var(--border-radius-small);
+  color: var(--color-text-1);
+  font-size: 12px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-weight: 500;
+  vertical-align: middle;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: var(--color-fill-2);
 
   &-light {
     background-color: rgba(var(--brand-5), 0.15);

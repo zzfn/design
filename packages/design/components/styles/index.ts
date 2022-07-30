@@ -11,3 +11,4 @@ import '../svg-icon/style';
 import '../alert/style';
 import '../modal/style';
 import '../space/style';
+import '../message/style';

@@ -3,10 +3,11 @@ import classNames from '../utils/classNames';
 
 type TagType = {
   children: React.ReactNode;
-  type: 'light' | 'ghost' | 'solid';
+  size?: 'small' | 'default' | 'medium'|'large';
+  color?: string;
 };
-const Tag: React.FC<TagType> = ({ children, type = 'light' }) => {
-  return <span className={classNames('zzf-tag', `zzf-tag-${type}`)}>{children}</span>;
+const Tag: React.FC<TagType> = ({ children, size = 'default' }) => {
+  return <span className={classNames('zzf-tag', `zzf-tag-size-${size}`)}>{children}</span>;
 };
 
 export default Tag;

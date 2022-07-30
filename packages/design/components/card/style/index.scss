@@ -1,14 +1,23 @@
 .zzf-card {
-  padding: 10px;
+  border: 1px solid var(--color-neutral-3);
   border-radius: var(--border-radius-small);
-  background-color: var(--color-bg-0);
-  color: var(--color-text-0);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-2);
+  transition: box-shadow .2s linear;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-1);
   &-header {
     display: flex;
     color: var(--color-primary);
     align-items: center;
     font-size: 16px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-neutral-3);
+    height: 46px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &-body{
+    padding: 16px;
+    color: var(--color-text-2);
   }
 }

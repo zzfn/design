@@ -1,37 +1,176 @@
-.zzf-btn {
-  width: auto;
-  padding: 5px 16px;
-  outline: none;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-  white-space: nowrap;
-  color: rgba(var(--white), 1);
-  background-color: var(--color-primary);
-  border: none;
-  border-radius: var(--border-radius-small);
-  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  transition-property: color, background-color, border-color;
-  &:hover {
-    background-color: var(--color-primary-hover);
-    border-color: var(--color-primary);
-    transition-duration: 0.1s;
-  }
-  &:active {
-    background-color: var(--color-primary-active);
-  }
-  &:focus {
-    outline: none;
-  }
-  &-light {
-    color: var(--color-primary);
-    border: 0 solid transparent;
-    background-color: var(--color-fill-0);
-    &:hover {
-      background-color: var(--color-fill-1);
-    }
-    &:active {
-      background-color: var(--color-fill-2);
+@mixin get-btn($type) {
+  $color-map: (
+    primary: #fff,
+    secondary: var(--color-text-2),
+    outline: rgb(var(--primary-6)),
+    text: rgb(var(--primary-6)),
+  );
+  $color-hover-map: (
+    primary: #fff,
+    secondary: var(--color-text-2),
+    outline: rgb(var(--primary-6)),
+    text: rgb(var(--primary-6)),
+  );
+  $bg-map: (
+    primary: rgb(var(--primary-6)),
+    secondary: var(--color-secondary),
+    outline: transparent,
+    text: transparent,
+  );
+  $bg-hover-map: (
+    primary: rgb(var(--primary-5)),
+    secondary: var(--color-secondary-hover),
+    outline: transparent,
+    text: transparent,
+  );
+  $border-map: (
+    primary: rgb(var(--primary-6)),
+    secondary: var(--color-secondary),
+    outline: rgb(var(--primary-6)),
+    text: transparent,
+  );
+  $border-hover-map: (
+    primary: rgb(var(--primary-6)),
+    secondary: var(--color-secondary),
+    outline: rgb(var(--primary-6)),
+    text: transparent,
+  );
+  .zzf-btn-type-#{$type} {
+    &:not(.zzf-btn-disabled) {
+      background-color: map-get($bg-map, $type);
+      color: map-get($color-map, $type);
+      border: 1px solid map-get($border-map, $type);
+      &:not(.zzf-btn-loading):hover {
+        border-color: map-get($border-hover-map, $type);
+        color: map-get($color-hover-map, $type);
+        background-color: map-get($bg-hover-map, $type);
+      }
     }
   }
 }
+@mixin btn-size($size) {
+  $padding-map: (
+    default: 15px,
+    small: 15px,
+    large: 19px,
+    mini: 11px,
+  );
+  $font-size-map: (
+    default: 14px,
+    large: 14px,
+    small: 14px,
+    mini: 12px,
+  );
+  $height-map: (
+    default: 32px,
+    large: 36px,
+    small: 28px,
+    mini: 24px,
+  );
+  $border-radius-map: (
+    default: var(--border-radius-small),
+    large: var(--border-radius-small),
+    small: var(--border-radius-small),
+    mini: var(--border-radius-small),
+  );
+
+  .zzf-btn-size-#{$size} {
+    padding: 0 map-get($padding-map, $size);
+    font-size: map-get($font-size-map, $size);
+    height: map-get($height-map, $size);
+    border-radius: map-get($border-radius-map, $size);
+  }
+}
+.zzf-btn{
+  display: inline-block;
+  outline: none;
+  font-weight: 400;
+  appearance: none;
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .1s linear;
+  box-sizing: border-box;
+  line-height: 1.5715;
+}
+@include get-btn(primary);
+@include get-btn(secondary);
+@include get-btn(dashed);
+@include get-btn(outline);
+@include get-btn(text);
+
+@include btn-size(mini);
+@include btn-size(small);
+@include btn-size(default);
+@include btn-size(large);
+//.zzf-btn {
+//  width: auto;
+//  padding: 5px 16px;
+//  outline: none;
+//  font-weight: 500;
+//  font-size: 14px;
+//  cursor: pointer;
+//  white-space: nowrap;
+//  color: rgba(var(--white), 1);
+//  background-color: rgb(var(--primary-6));
+//  border: none;
+//  border-radius: var(--border-radius-small);
+//  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+//  transition-property: color, background-color, border-color;
+//
+//  &:hover {
+//    background-color: var(--color-primary-hover);
+//    border-color: var(--color-primary);
+//    transition-duration: 0.1s;
+//  }
+//
+//  &:active {
+//    background-color: var(--color-primary-active);
+//  }
+//
+//  &:focus {
+//    outline: none;
+//  }
+//
+//  &-default {
+//    padding: 0 15px;
+//    font-size: 14px;
+//    height: 32px;
+//    border-radius: var(--border-radius-small);
+//    background-color: var(--color-secondary);
+//
+//    &:hover {
+//      border-color: var(--color-neutral-4);
+//      color: var(--color-text-2);
+//      background-color: var(--color-fill-3);
+//    }
+//  }
+//
+//  &-primary {
+//    &:not(.zzf-btn-disabled) {
+//      background-color: rgb(var(--primary-6));
+//      color: #fff;
+//      border: 1px solid transparent;
+//    }
+//
+//    background-color: rgb(var(--primary-6));
+//    color: #fff;
+//    border: 1px solid transparent;
+//  }
+//
+//  &-secondary {
+//    &:not(.zzf-btn-disabled) {
+//      background-color: var(--color-secondary);
+//      color: var(--color-text-2);
+//      border: 1px solid transparent;
+//    }
+//  }
+//
+//  &-outline {
+//    &:not(.zzf-btn-disabled) {
+//      background-color: transparent;
+//      color: rgb(var(--primary-6));
+//      border: 1px solid rgb(var(--primary-6));
+//    }
+//  }
+//}
