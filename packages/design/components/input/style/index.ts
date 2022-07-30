@@ -1,1 +1,1 @@
-import './ipt.scss';
+import './input.scss';

@@ -2,9 +2,9 @@
   padding: 5px 12px;
   font-size: 14px;
   line-height: 20px;
-  color: var(--color-text-0);
+  color: var(--color-text-1);
   vertical-align: middle;
-  background-color: var(--color-fill-0);
+  background-color: var(--color-fill-2);
   background-repeat: no-repeat;
   background-position: right 8px center;
   border: 1px solid transparent;
@@ -17,6 +17,8 @@
   }
   &:focus,
   &:active {
-    border-color: var(--color-focus-border);
+    border-color: rgb(var(--primary-6));
+    background-color: var(--color-bg-2);
+    box-shadow: 0 0 0 0 var(--color-primary-light-2);
   }
 }
