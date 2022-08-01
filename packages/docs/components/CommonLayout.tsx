@@ -24,7 +24,7 @@ const CommonLayout = () => {
           ))}
         </ul>
       </aside>
-      <div>
+      <div style={{flexGrow:1}}>
         <header className={'web-header'}>
           组件库文档
           {theme === "dark" && (
@@ -34,7 +34,7 @@ const CommonLayout = () => {
             <Sun className={"icon"} onClick={() => setThemeAction("dark")} />
           )}
         </header>
-        <main>
+        <main className={'web-main'}>
           <Outlet />
         </main>
         <footer>power by cc</footer>
