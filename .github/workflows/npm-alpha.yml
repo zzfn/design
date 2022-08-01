@@ -48,9 +48,9 @@ jobs:
         run: pnpm run lint
 
       - name: Build
-        run: pnpm --filter @zzf/ui run build
+        run: pnpm --filter @zzf/design run build
 
       - name: Publish
-        run: pnpm publish --tag alpha --filter @zzf/ui
+        run: pnpm publish --tag alpha --filter @zzf/design
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
