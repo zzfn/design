@@ -1,5 +1,5 @@
-@import '~@zzf/design/dist/theme';
-
+@import "@zzf/design/dist/theme";
+@import "@zzf/design/dist/bundle.min.css";
 :root,
 [data-color-mode='light'] {
   @include colors-light;
@@ -77,4 +77,10 @@ body {
   .code {
     background-color: var(--color-bg-default);
   }
+}
+.web-header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
 }

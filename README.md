@@ -21,11 +21,11 @@
 ## 📦 安装
 
 ```bash
-npm install @zzf/design --save
+npm install @zzf/ui --save
 ```
 
 ```bash
-yarn add  @zzf/design
+yarn add  @zzf/ui
 ```
 
 ## 本地调试指南

@@ -1,0 +1,41 @@
+.zzf-comment{
+  display: flex;
+  line-height: 1.5715;
+  margin-top: 20px;
+  &-avatar{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-fill-4);
+    white-space: nowrap;
+    color: var(--color-white);
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  &-content-container{
+    flex-grow: 1;
+  }
+  &-header{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text-2);
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  &-content{
+    font-size: 14px;
+    color: var(--color-text-1);
+  }
+  &-actions{
+    margin-top:8px;
+  }
+  &-comment{
+
+  }
+}

@@ -13,16 +13,13 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "baseUrl": "../design/components",
+    "baseUrl": ".",
     "paths": {
       "components": [
         "components/*"
       ]
     },
-    "typeRoots": [
-      "./node_modules/@types/",
-      "./typings"
-    ],
+    "typeRoots": ["./node_modules/@types/", "./typings"],
     "types": [
       "node",
       "webpack-env",
@@ -43,7 +40,7 @@
     "isolatedModules": true
   },
   "include": [
-    "packages/design/components/**/*",
+    "src/**/*",
     "typings/**/*"
   ],
   "exclude": [

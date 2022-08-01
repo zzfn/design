@@ -48,10 +48,10 @@ jobs:
           scope: '@zzf'
 
       - name: Install dependencies
-        run: pnpm --filter @zzf/design run build
+        run: pnpm --filter @zzf/ui run build
 
       - name: Build
-        run: pnpm --filter @zzf/design run build
+        run: pnpm --filter @zzf/ui run build
 
       - name: Publish
         run: npm run publish

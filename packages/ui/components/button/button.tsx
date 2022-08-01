@@ -1,0 +1,29 @@
+import React from 'react';
+import classNames from '../utils/classNames';
+
+interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+  type?: 'default' | 'primary' | 'text' | 'secondary';
+  size?: 'default' | 'primary' | 'mini';
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+const Button = ({
+  children,
+  type = 'secondary',
+  size = 'default',
+  className,
+  onClick,
+}: ButtonProps) => {
+  return (
+    <button
+      onClick={onClick}
+      className={classNames('zzf-btn', `zzf-btn-type-${type}`, `zzf-btn-size-${size}`, className)}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default Button;
