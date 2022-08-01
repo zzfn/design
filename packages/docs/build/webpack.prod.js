@@ -11,9 +11,9 @@ const handler = (percentage, message, ...args) => {
 };
 module.exports = merge(base, {
     mode: 'production',
-    devtool: 'nosources-source-map',
+    devtool: false,
     output: {
-        publicPath: 'https://oss-zzf.zzfzzf.com/zeus',
+        publicPath: 'https://oss-zzf.zzfzzf.com/deisgn',
     },
     optimization: {
         runtimeChunk: 'single',
