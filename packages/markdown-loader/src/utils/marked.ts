@@ -1,7 +1,13 @@
 import { marked } from "marked";
-import xss from "xss";
-
-function mark2html(source: string) {
-    return xss(marked.parse(source, { xhtml: true }))
-}
-export default mark2html
+import hljs from 'highlight.js';
+const renderer = new marked.Renderer();
+renderer.code = function (code) {
+    return `<pre class="code_block"><code class="language-tsx">${hljs.highlight(code, { language:'tsx' }).value}</code></pre>\n`
+};
+marked.setOptions({
+  gfm: true,
+  breaks: false,
+  renderer,
+  xhtml: true
+});
+export default marked;

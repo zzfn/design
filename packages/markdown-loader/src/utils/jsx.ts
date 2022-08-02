@@ -12,7 +12,7 @@ export function htmlToJsx(html: string) {
     };`;
 }
 export function dangerouslySetInnerHTMLToJsx(html: string) {
-  html = html.replace(/\n/g, "\\\n").replace(/"/g, "'");
+  html = html.replace(/\n/g, "<br/>").replace(/"/g, "'");
   return `import React from 'react';
     export default function() {
       return (

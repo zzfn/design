@@ -39,8 +39,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              cacheDirectory: true,
-              plugins: [isDevelopment && 'react-refresh/babel'].filter(Boolean),
+              cacheDirectory: true
             },
           },
         ],

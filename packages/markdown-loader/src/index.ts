@@ -1,4 +1,4 @@
-import { marked } from "marked";
+import  marked from "./utils/marked";
 import xss from "xss";
 import getMarkdownCode from "./utils/getMarkdownCode";
 import fm from "front-matter";
@@ -27,7 +27,7 @@ function loader(rawContent: string) {
   if (code) {
     const codeOriginAst = babelParse(
       dangerouslySetInnerHTMLToJsx(
-        marked.parse(`\`\`\`js\n${code}\n\`\`\``, { xhtml: true })
+          marked(`\`\`\`js\n${code}\n\`\`\``)
       )
     );
     let codePreviewBlockAst;
@@ -44,7 +44,7 @@ function loader(rawContent: string) {
         let tsCodePreviewBlockAst;
         const tsCodeAst = babelParse(
           dangerouslySetInnerHTMLToJsx(
-            marked.parse(`\`\`\`js\n${code}\n\`\`\``, { xhtml: true })
+              marked(`\`\`\`js\n${code}\n\`\`\``)
           )
         );
         traverse(tsCodeAst, {
@@ -123,7 +123,7 @@ function loader(rawContent: string) {
 const App = () => {
     return (
       <>
-      ${xss(marked.parse(source.body, { xhtml: true }))
+      ${xss(marked(source.body, { xhtml: true }))
         .replace(/class=/g, "className=")
         .replace(/{/g, '{"{"{')
         .replace(/}/g, '{"}"}')

@@ -88,3 +88,11 @@ body {
   flex-grow: 1;
   width: 100%;
 }
+.code-preview{
+  background-color: var(--color-fill-1);
+  margin-top: 20px;
+  padding:28px 48px;
+  pre{
+    margin: 0;
+  }
+}
