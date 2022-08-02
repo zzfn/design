@@ -55,6 +55,7 @@
     "@zzf/markdown-loader": "^1.0.0",
     "arco-markdown-loader": "^1.0.5",
     "autoprefixer": "^10.4.7",
+    "react-helmet": "^6.1.0",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",

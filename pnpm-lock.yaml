@@ -59,6 +59,7 @@ importers:
       react: ^18.2.0
       react-docgen-typescript: ^2.2.2
       react-dom: ^18.2.0
+      react-helmet: ^6.1.0
       react-live: ^2.4.1
       react-markdown: ^8.0.3
       react-router-dom: ^6.3.0
@@ -130,6 +131,7 @@ importers:
       prettier: 2.7.1
       prismjs: 1.28.0
       react-docgen-typescript: 2.2.2_typescript@4.7.4
+      react-helmet: 6.1.0_react@18.2.0
       react-live: 2.4.1_biqbaboplfbrettd7655fr4n2y
       react-markdown: 8.0.3_3hx2ussxxho4jajbwrd6gq34qe
       react-syntax-highlighter: 15.5.0_react@18.2.0
@@ -173,7 +175,6 @@ importers:
       prettier: ^2.3.0
       prismjs: ^1.23.0
       react: ^18.2.0
-      react-helmet: ^6.1.0
       remark-parse: ^3.0.0
       remark-stringify: ^10.0.2
       typescript: ^4.7.4
@@ -199,7 +200,6 @@ importers:
       prettier: 2.7.1
       prismjs: 1.28.0
       react: 18.2.0
-      react-helmet: 6.1.0_react@18.2.0
       remark-parse: 3.0.1
       remark-stringify: 10.0.2
       typescript: 4.7.4

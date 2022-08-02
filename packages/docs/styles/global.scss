@@ -95,5 +95,8 @@ body {
   padding:28px 48px;
   pre{
     margin: 0;
+    overflow-x: auto;
+    code{
+    }
   }
 }
