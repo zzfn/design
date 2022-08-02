@@ -13,7 +13,7 @@ export default function (plop) {
       {
         type: 'add',
         path: 'components/{{name}}/index.tsx',
-        templateFile: 'templates/index.tsx.hbs',
+        templateFile: 'templates/index.ts.hbs',
       },
       {
         type: 'add',
@@ -23,7 +23,7 @@ export default function (plop) {
       {
         type: 'add',
         path: 'components/{{name}}/style/index.tsx',
-        templateFile: 'templates/style.index.tsx.hbs',
+        templateFile: 'templates/style.index.ts.hbs',
       },
       {
         type: 'add',
