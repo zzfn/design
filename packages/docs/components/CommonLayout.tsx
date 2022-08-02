@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import useMenu from "./useMenu";
 import Moon from "./Moon";
 import Sun from "./Sun";
-
+import styles from "./layout.module.scss";
+import { Layout } from "@zzf/design";
 const CommonLayout = () => {
   const list = useMenu();
   const [theme, setTheme] = useState("light");
@@ -12,20 +13,9 @@ const CommonLayout = () => {
     setTheme(theme);
   }
   return (
-    <div style={{ display: "flex" }}>
-      <aside>
-        <ul>
-          {list.map((item) => (
-            <li>
-              <Link key={item.path} to={item.path}>
-                {item.path}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </aside>
-      <div style={{flexGrow:1}}>
-        <header className={'web-header'}>
+    <Layout className={styles.container}>
+      <Layout.Header>
+        <header className={styles.webHeader}>
           组件库文档
           {theme === "dark" && (
             <Moon className={"icon"} onClick={() => setThemeAction("light")} />
@@ -34,12 +24,25 @@ const CommonLayout = () => {
             <Sun className={"icon"} onClick={() => setThemeAction("dark")} />
           )}
         </header>
-        <main className={'web-main'}>
+      </Layout.Header>
+      <Layout.Content className={styles.webContent}>
+        <Layout.Left>
+          <ul>
+            {list.map((item) => (
+              <li key={item.path}>
+                <Link key={item.path} to={item.path}>
+                  {item.path}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Layout.Left>
+        <Layout.Center>
           <Outlet />
-        </main>
-        <footer>power by cc</footer>
-      </div>
-    </div>
+        </Layout.Center>
+      </Layout.Content>
+      <Layout.Footer className="container">power by cc</Layout.Footer>
+    </Layout>
   );
 };
 export default CommonLayout;

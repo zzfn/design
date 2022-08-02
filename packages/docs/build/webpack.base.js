@@ -63,9 +63,27 @@ module.exports = {
       },
       {
         test: /\.scss$/,
+        exclude: /\.module\.(scss)$/,
         use: [
           'style-loader',
           'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.module\.(scss)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 3,
+              modules: {
+                exportLocalsConvention: 'camelCaseOnly',
+              },
+              sourceMap: true,
+            },
+          },
           'sass-loader',
         ],
       },
