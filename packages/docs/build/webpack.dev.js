@@ -1,12 +1,12 @@
-const { merge } = require('webpack-merge');
-const base = require('./webpack.base');
+const { merge } = require("webpack-merge");
+const base = require("./webpack.base");
 module.exports = merge(base, {
-  mode: 'development',
+  mode: "development",
   output: {
-    publicPath: '/',
+    publicPath: "/",
   },
-  target: 'web',
-  devtool: 'eval',
+  target: "web",
+  devtool: "eval",
   devServer: {
     hot: true,
     port: 8088,

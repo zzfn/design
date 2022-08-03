@@ -12,17 +12,17 @@ title: 基本用法
 There are `primary`, `secondary`, `dashed`, `outline` and `text` button types.
 
 ```tsx
-import { Button, Space } from '@zzf/design';
+import { Button, Space } from "@zzf/design";
 
 const App = () => {
-    return (
-        <Space size="large">
-            <Button type="primary">Primary</Button>
-            <Button type="secondary">Secondary</Button>
-            <Button type="outline">Outline</Button>
-            <Button type="text">Text</Button>
-        </Space>
-    );
+  return (
+    <Space size="large">
+      <Button type="primary">Primary</Button>
+      <Button type="secondary">Secondary</Button>
+      <Button type="outline">Outline</Button>
+      <Button type="text">Text</Button>
+    </Space>
+  );
 };
 
 export default App;

@@ -37,7 +37,7 @@ const CommonLayout = () => {
             ))}
           </ul>
         </Layout.Left>
-        <Layout.Center>
+        <Layout.Center className={styles.center}>
           <Outlet />
         </Layout.Center>
       </Layout.Content>

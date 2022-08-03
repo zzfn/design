@@ -27,7 +27,7 @@ function loader(rawContent: string) {
   if (code) {
     const codeOriginAst = babelParse(
       dangerouslySetInnerHTMLToJsx(
-          marked(`\`\`\`js\n${code}\n\`\`\``)
+          marked(`\`\`\`tsx\n${code}\n\`\`\``)
       )
     );
     let codePreviewBlockAst;
@@ -44,7 +44,7 @@ function loader(rawContent: string) {
         let tsCodePreviewBlockAst;
         const tsCodeAst = babelParse(
           dangerouslySetInnerHTMLToJsx(
-              marked(`\`\`\`js\n${code}\n\`\`\``)
+              marked(`\`\`\`tsx\n${code}\n\`\`\``)
           )
         );
         traverse(tsCodeAst, {

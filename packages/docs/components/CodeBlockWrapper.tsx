@@ -1,4 +1,4 @@
 const CodeBlockWrapper = () => {
-return <>CodeBlockWrapper</>;
+  return <>CodeBlockWrapper</>;
 };
 export default CodeBlockWrapper;

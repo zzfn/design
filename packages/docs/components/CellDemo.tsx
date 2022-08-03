@@ -1,4 +1,4 @@
 const CellDemo = () => {
-return <>CellDemo</>;
+  return <>CellDemo</>;
 };
 export default CellDemo;

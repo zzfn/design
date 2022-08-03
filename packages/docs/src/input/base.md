@@ -1,12 +1,12 @@
 ```tsx
-import { Input } from '@zzf/design';
+import { Input } from "@zzf/design";
 
 const App = () => {
-    return (
-        <>
-            <Input placeholder='请输入'></Input>
-        </>
-    );
+  return (
+    <>
+      <Input placeholder="请输入"></Input>
+    </>
+  );
 };
 
 export default App;
