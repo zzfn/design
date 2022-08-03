@@ -9,6 +9,7 @@ const CommonLayout = () => {
   const list = useMenu();
   const [theme, setTheme] = useState("light");
   function setThemeAction(theme: string) {
+    document.body.setAttribute("arco-theme", theme);
     document.querySelector("html")?.setAttribute("data-color-mode", theme);
     setTheme(theme);
   }
@@ -26,7 +27,7 @@ const CommonLayout = () => {
         </header>
       </Layout.Header>
       <Layout.Content className={styles.webContent}>
-        <Layout.Left>
+        <Layout.Left className={styles.aside}>
           <ul>
             {list.map((item) => (
               <li key={item.path}>

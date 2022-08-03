@@ -5,9 +5,21 @@
 }
 .webContent {
   width: 100%;
+  display: flex!important;
+  .aside{
+    width: 150px;
+    border-right: 1px solid var(--color-border);
+  }
 }
 .center{
-  overflow:initial!important;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 56px;
+  box-sizing: border-box;
+  overflow: hidden;
+  //overflow:initial!important;
 }
 .container {
   margin: 0 auto;

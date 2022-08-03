@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 type BackTopType = {
   children: React.ReactNode;
 };
-const BackTop: React.FC<BackTopType> = ({ children }) => {
+const BackTop = ({ children }: BackTopType) => {
   const [isShow, setIsShow] = useState(false);
 
   function handleIsShow() {

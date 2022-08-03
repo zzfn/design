@@ -4,9 +4,9 @@ import classNames from '../utils/classNames';
 interface ButtonProps {
   children: React.ReactNode;
   className?: string;
-  type?: 'default' | 'primary' | 'text' | 'secondary';
+  type?:  'primary' | 'text' | 'secondary';
   size?: 'default' | 'primary' | 'mini';
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent) => void;
 }
 
 const Button = ({

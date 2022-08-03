@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "个人博客组件库",
   "scripts": {
+    "debug": "turbo run debug",
     "clean": "rm -rf node_modules packages/**/node_modules",
     "build:doc": "turbo run build",
     "dev:doc": "turbo run dev",

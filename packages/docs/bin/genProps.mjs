@@ -15,17 +15,21 @@ const parse = docgen.withDefaultConfig({
 
 const files = await fs.readdir(path.resolve(__dirname, "../../ui/components"));
 files.forEach(async (file) => {
-  const componentInfo = parse(
-    path.resolve(__dirname, `../../ui/components/${file}/${file}.tsx`)
-  );
-  const has = await fs.stat(path.resolve(__dirname, `../src/${file}`));
-  if (!has) {
-    await fs.mkdir(path.resolve(__dirname, `../src/${file}`));
+  try {
+    const componentInfo = parse(
+        path.resolve(__dirname, `../../ui/components/${file}/${file}.tsx`)
+    );
+    const has = await fs.stat(path.resolve(__dirname, `../src/${file}`));
+    if (!has) {
+      await fs.mkdir(path.resolve(__dirname, `../src/${file}`));
+    }
+    await fs.writeFile(
+        path.resolve(__dirname, `../src/${file}/types.md`),
+        commentToMarkDown(componentInfo)
+    );
+  } catch (e) {
+    console.log(e)
   }
-  await fs.writeFile(
-    path.resolve(__dirname, `../src/${file}/types.md`),
-    commentToMarkDown(componentInfo)
-  );
 });
 
 function commentToMarkDown(componentInfo) {
