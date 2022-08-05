@@ -45,12 +45,7 @@ marked.setOptions({
 // sort table api
 const walkTokens = (token) => {
   if (token.type === 'table') {
-    console.log(token)
-    // delete empty row
-    // token.cells = token.cells.filter((c) => c[0]);
-    // token.tokens.cells = token.tokens.cells.filter((c) => c[0][0]);
-    // token.cells.sort((a, b) => a[0].localeCompare(b[0]));
-    // token.tokens.cells.sort((a, b) => a[0][0].text.localeCompare(b[0][0].text));
+    token.rows.sort((a, b) => a[0].text.localeCompare(b[0].text));
   }
 };
 

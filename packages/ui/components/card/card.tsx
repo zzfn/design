@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import classNames from '../utils/classNames';
+import classNames from '../_util/classNames';
 
 interface CardProps {
   children: React.ReactNode;

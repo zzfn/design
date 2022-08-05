@@ -1,6 +1,6 @@
 import { ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import usePortal from '../hooks/usePortal';
+import usePortal from '../_hooks/usePortal';
 
 /**
  * @example

@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from '../utils/classNames';
+import classNames from '../_util/classNames';
 interface SidebarProps {
   className?: string;
   children: React.ReactNode;

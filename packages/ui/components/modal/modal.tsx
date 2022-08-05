@@ -2,8 +2,8 @@ import React from 'react';
 import type { ReactNode } from 'react';
 import Portal from '../common/Portal';
 import { Button } from '../button';
-import useOutsideClick from '../hooks/useOutsideClick';
-import classNames from '../utils/classNames';
+import useOutsideClick from '../_hooks/useOutsideClick';
+import classNames from '../_util/classNames';
 import Close from '../icon/Close';
 type ModalType = {
   title?: string;

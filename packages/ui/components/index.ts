@@ -11,5 +11,4 @@ export { SvgIcon } from './svg-icon';
 export { Alert } from './alert';
 export { Modal } from './modal';
 export { Space } from './space';
-export { message } from './message';
 export { Comment } from './comment';
