@@ -19,6 +19,7 @@
     flex-shrink: 0;
     margin-right: 12px;
     cursor: pointer;
+    border-radius: 50%;
   }
   &-content-container{
     flex-grow: 1;
@@ -26,7 +27,7 @@
   &-header{
     display: flex;
     justify-content: space-between;
-    color: var(--color-text-2);
+    color: var(--color-text-3);
     font-size: 14px;
     margin-right: 8px;
   }

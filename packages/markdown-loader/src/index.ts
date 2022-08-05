@@ -199,8 +199,8 @@ function loaderForArcoComponentDoc(
       if (usageAst && !functionName) {
         _path.insertBefore(usageAst);
       }
+      console.log('do------------------------------------------------',this.resourcePath,ast)
       if (ast) {
-        console.log('do------------------------------------------------')
         _path.insertBefore(commonImports);
         _path.insertBefore(ast);
       }

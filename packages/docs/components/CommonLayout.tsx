@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useMenu from "./useMenu";
 import Moon from "./Moon";
@@ -31,9 +31,13 @@ const CommonLayout = () => {
           <ul>
             {list.map((item) => (
               <li key={item.path}>
-                <Link key={item.path} to={item.path}>
+                <NavLink
+                  className={({ isActive }) => isActive ? styles.active:''}
+                  key={item.path}
+                  to={item.path}
+                >
                   {item.path}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

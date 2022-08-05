@@ -15,7 +15,8 @@ A basic comment component with author, avatar, time and actions.
 
 ```js
 import React from 'react';
-import { Comment, Avatar } from '@arco-design/web-react';
+import { Avatar } from '@arco-design/web-react';
+import { Comment } from '@zzf/design';
 import {
   IconHeart,
   IconMessage,
@@ -52,14 +53,7 @@ const App = () => {
     <Comment
       actions={actions}
       author="Socrates"
-      avatar={
-        <Avatar>
-          <img
-            alt="avatar"
-            src="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/e278888093bef8910e829486fb45dd69.png~tplv-uwbnlip3yd-webp.webp"
-          />
-        </Avatar>
-      }
+      avatar={"//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/e278888093bef8910e829486fb45dd69.png~tplv-uwbnlip3yd-webp.webp"}
       content={<div>Comment body content.</div>}
       datetime="1 hour"
     />
