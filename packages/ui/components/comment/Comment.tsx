@@ -12,7 +12,9 @@ const Comment = (props: CommentProps) => {
   const { author, avatar, content, datetime, children } = props;
   return (
     <div className={'zzf-comment'}>
-      <img className='zzf-comment-avatar' src={avatar} alt='' />
+      <div className='zzf-comment-avatar'>
+        {avatar}
+      </div>
       <div className='zzf-comment-content-container'>
         <header className='zzf-comment-header'>
           <span>{author}</span>
